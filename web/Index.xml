@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <meta>XML - Présentation</meta>
+    <menu>
+        <onglet n=1>Presentation</onglet>
+        <onglet n=2>Patterns Syntaxiques</onglet>
+        <onglet n=3>Unités Poly-lexicales</onglet>
+    </menu>
+    <titre>Présentation</titre>
+    <problématique>Problématique</problématique>
+    <paragraphe n=1>
+        Pour ce projet, nous avons choisis de produire des ressources pour le TAL. Nous sommes parties de données étiquettées en dépendance, en parties du discours 
+        et en mots, et nous les avons analysées pour en extraires des régularités exploitables par la prise de décision statistique. 
+    </paragraphe>
+    
+</root>
