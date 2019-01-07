@@ -1,0 +1,24 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT root (arbre|fichier)+>
+<!ATTLIST root
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT arbre (mot)+>
+<!ATTLIST arbre
+  xmlns CDATA #FIXED ''
+  n CDATA #REQUIRED>
+
+<!ELEMENT fichier EMPTY>
+<!ATTLIST fichier
+  xmlns CDATA #FIXED ''
+  nom CDATA #REQUIRED>
+
+<!ELEMENT mot (token)+>
+<!ATTLIST mot
+  xmlns CDATA #FIXED ''
+  pos CDATA #REQUIRED>
+
+<!ELEMENT token (#PCDATA)>
+<!ATTLIST token
+  xmlns CDATA #FIXED ''>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="root">
+      <oneOrMore>
+        <choice>
+          <element name="arbre">
+            <attribute name="n">
+              <data type="integer"/>
+            </attribute>
+            <oneOrMore>
+              <element name="mot">
+                <attribute name="pos"/>
+                <oneOrMore>
+                  <element name="token">
+                    <text/>
+                  </element>
+                </oneOrMore>
+              </element>
+            </oneOrMore>
+          </element>
+          <element name="fichier">
+            <attribute name="nom"/>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>
