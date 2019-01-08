@@ -1,0 +1,19 @@
+TO DO LIST :
+
+OLD :
+
+1/ Harmoniser les catégories grammaticales -OK-
+2/ Faire des counts sur les POS et sur d'autres attributs communs
+
+3/ Récupérer des corpus thématique (domaine/type) déjà faits sur le Web (facultatif)
+4/ Formater et étiqueter automatiquement les textes (facultatif)
+
+NEW :
+
+1/ Vérifier la validité de la syntaxe XML
+2/ Vérifier la validité avec DTD/RNG et créer un rapport
+3/ Terminer la page de présentation (prio) et faire des captures
+4/ Créer des visuels à l'aide de scripts python, de commandes Xpath et de javascript
+Tester l'utilisation des entités
+5/ Créer un tableau vers les visuels
+6/ Réorganiser l'arboresence de fichiers

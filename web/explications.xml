@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="application/xml" href="explications.xsl"?>
+
+<document>
+<titre>Documents structurés - Exercices autour du langage XML</titre>
+
+<!-- En-tête -->
+
+<entete id="top">
+  <titre_entete>Représentation XML -
+  Projet sur l'analyse de corpus annotés</titre_entete>
+  <presentation>Projet réalisé dans le cadre du cours XML au sein du master TAL de l'Inalco - M2S1 -
+  Auteur : Léa Lamotte - Victorien Villiers</presentation>
+
+  <!-- Barre de navigation -->
+  
+  <menu>
+		
+		<bouton>
+			<titre_bouton anchor ="pres">Présentation</titre_bouton>
+		</bouton>
+		
+		<bouton>
+			<titre_bouton anchor ="corpus">Corpus</titre_bouton>
+		</bouton>
+		
+		<bouton>
+			<titre_bouton anchor ="script">Scripts</titre_bouton>
+		</bouton>
+			
+		<bouton>
+			<titre_bouton anchor ="tab">Tableau</titre_bouton>
+		</bouton>
+		
+		<bouton>
+			<titre_bouton anchor ="concl">Conclusion</titre_bouton>
+		</bouton>
+	
+    </menu>
+	
+	<!-- Corps -->
+
+</entete>
+<corps>
+
+	<!-- Présentation -->
+
+	<exercice id="pres">
+		<id>pres</id>
+			<exercice_intro>
+				<titre_paragraphe> Présentation du projet</titre_paragraphe>
+				<paragraphe>L'objectif de ce projet est d'analyser les ressemblances et les divergences de plusieurs corpus annotés du français, notamment les écarts entre la langue orale et la langue écrite. Les corpus textuels sont des collections de documents variés censés donner une représentation de la langue dans un contexte particulier. L'analyse de ces textes à l'aide d'annotations et d'un format structuré permet de mettre à jour leurs caractéristiques et ainsi de faire émerger, notamment à l'aide de visuels et de traitements variés (transformations XSL, visualisation Javascripts), des similitudes ou, au contraire, desr ruptures.</paragraphe>
+			</exercice_intro>
+			<exercice_corps>
+				<elem>
+					<titre_corps>Procédure et structure de l'arborescence</titre_corps>
+					<paragraphe_corps>
+						<text>
+						La problématique de notre projet consistera donc à faire transparaître, à l'aide de vastes jeux de données, les divergence et ressemblances entre les textes oraux et écrits. Souvent moins traités dans l'analyse de corpus, l'oral va présenter des caractéristiques particulières, c'est ce que nous tenterons de présenter. Enfin, on dénote également des particularités dans les textes écrits, nous verrons comment elles se manifestent dans le corpus, en regard d'autres textes oraux.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				<elem>
+					<titre_corps>Écrit VS Oral</titre_corps>
+					<paragraphe_corps>
+						<text>
+						La problématique de notre projet consistera donc à faire transparaître, à l'aide de vastes jeux de données, les divergence et ressemblances entre les textes oraux et écrits. Souvent moins traités dans l'analyse de corpus, l'oral va présenter des caractéristiques particulières, c'est ce que nous tenterons de présenter. Enfin, on dénote également des particularités dans les textes écrits, nous verrons comment elles se manifestent dans le corpus, en regard d'autres textes oraux.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				<elem>
+					<paragraphe_corps><answer> Particularités des jeux de données textuelles...</answer></paragraphe_corps>
+					<paragraphe_corps>
+						<text>
+						Contrairement à des jeux de données « classiques » comportant des données numériques (statistiques, informations géospatiales), les données textuelles offrent peu d'informations a priori. Une annotation sous forme de métadonnées est plus que nécessaire pour pouvoir effectuer une analyse plus fine des données.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				<elem>
+					<titre_corps>Étapes du projet et arborescence</titre_corps>
+					<paragraphe_corps>
+						<text>
+						Notre projet se divise en plusieurs étapes. Tout d'abord, nous passons par une phase de prétraitement des fichiers contenant les corpus annotés, afin de créer une structure de données au format XML destinées à l'analyse et à l'évaluation. Nous utilisons pour faire plusieurs scripts au format python. Le format XML offre de nombreux avantage, notamment grâce aux langages de requêtes permettant de tirer partie des métadonnées et de la structure des données pour pouvoir effectuer des opérations de traitement sur l'ensemble d'un corpus. Cette structure permet également d'obtenir un contenu uniforme facile à parcourir à étudier. Une fois les corpus bruts prétraités, la deuxième tâche consiste à analyser les fichiers structurés obtenus grâce à un ensemble de requêtes et de traitements pour effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels obtenus dans un tableau, afin d'accéder facilement au résultats des traitements finaux. La présente page de présentation et la page contenant le tableau sont également réalisées à partir de fichiers XML.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Arborescence du projet
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<image url="./images/arboresence.png">
+						</image>
+					</paragraphe_corps>
+				</elem>
+								
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Exemple de représentation du corpus au format CoNNL
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<lien url="./liens/corpus.connl">
+						Exemple de corpus au format CoNNL
+						</lien>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Schéma du processus de transformation
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<image url="./images/schema.png">
+						</image>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<return>
+						Retour au menu
+						</return>
+					</paragraphe_corps>
+				</elem>
+				
+			</exercice_corps>
+	</exercice>
+	
+	<!-- Corpus -->
+	
+	<exercice id="corpus">
+		<id>corpus</id>
+			<exercice_intro>
+				<titre_paragraphe> Corpus</titre_paragraphe>
+				<paragraphe>Pour notre projet, nous sommes parti de l'analyse de deux corpus principaux, un premier regroupant exclusivement des extraits de langue orale (corpus Rhapsodie), et un second composé intégralement de documents écrits (corpus Sequoia). </paragraphe>
+			</exercice_intro>
+			<exercice_corps>
+				<elem>
+					<titre_corps>Corpus Sequoia</titre_corps>
+					<paragraphe_corps>
+						<liste_2>
+						<elem_liste><text-content><bold-content>Nom :</bold-content> Deep Sequoia corpus</text-content></elem_liste>
+						<elem_liste><text-content>Source : https://deep-sequoia.inria.fr/fr/</text-content></elem_liste>
+						<elem_liste><text-content>Échantillonnage et genre : corpus de langue française annoté, intégrant des informations sur les dépendances syntaxiques de surface et profonde des mots, ainsi que leurs catégories grammaticales (arbres syntaxiques ou treebank) au format UD (CoNLL-u)</text-content></elem_liste>
+						<elem_liste><text-content>Modalité : écrit, documents provenant d'Europarl, du corpus l'Est Republicain, des pages Wikipédia de la communauté France, et de l'agence européenne du médicament.</text-content></elem_liste>
+						<elem_liste><text-content>Taille : environ 3200 phrases </text-content></elem_liste>
+						<elem_liste><text-content>Annotations et outils : annotation manuelle des catégories morpho-syntaxiques et de la structure syntagmatique en suivant les consignes d'annotation du French Treebank ; convention de transcription du corpus : https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf</text-content></elem_liste>
+						<elem_liste><text-content>Documentation : corpus issu des travaux réalisés par les équipes de l'INRIA, du LLF, du LORIA et du LabEx EFL. Articles de référence :</text-content></elem_liste>
+						<elem_liste><text-content>Marie Candito, Guy Perrier, Bruno Guillaume, Corentin Ribeyre, Karën Fort, Djamé Seddah and Éric de la Clergerie. (2014) Deep Syntax Annotation of the Sequoia French Treebank. Proc. of LREC 2014, Reykjavic, Iceland.</text-content></elem_liste>
+						<elem_liste><text-content>Guy Perrier, Marie Candito, Bruno Guillaume, Corentin Ribeyre, Karën Fort and Djamé Seddah. (2014) Un schéma d'annotation en dépendances syntaxiques profondes pour le français. Proc. of TALN 2014, Marseille, France.</text-content></elem_liste>
+						<elem_liste><text-content>Marie Candito and Djamé Seddah. (2012) Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical, Proceedings of TALN'2012, Grenoble, France</text-content></elem_liste>
+						<elem_liste><text-content>Licence et droit d'utilisation : Licence LGPL-LR (Lesser General Public License For Linguistic Resources). Mention de l'article : Candito M. and Seddah D., 2012 : "Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical", Actes de TALN'2012, Grenoble, France</text-content></elem_liste>
+						<elem_liste><text-content>EXTRAIT</text-content></elem_liste>
+
+						</liste_2>
+					</paragraphe_corps>
+				</elem>
+			</exercice_corps>
+			
+			<exercice_corps>
+				<elem>
+					<titre_corps>Corpus Rhapsodie</titre_corps>
+					<paragraphe_corps>
+						<liste_2>
+						<elem_liste><text-content>Nom :</text-content></elem_liste>
+						<elem_liste><text-content>Source :</text-content></elem_liste>
+						<elem_liste><text-content>Échantillonnage et genre :</text-content></elem_liste>
+						<elem_liste><text-content>Modalité :</text-content></elem_liste>
+						<elem_liste><text-content>Taille :</text-content></elem_liste>
+						<elem_liste><text-content>Annotations et outils :</text-content></elem_liste>
+						<elem_liste><text-content>Documentation :</text-content></elem_liste>
+						<elem_liste><text-content>Licence et droit d'utilisation :</text-content></elem_liste>
+						<elem_liste><text-content>EXTRAIT</text-content></elem_liste>
+
+						</liste_2>
+					</paragraphe_corps>
+				</elem>
+			</exercice_corps>
+			
+			<exercice_corps>
+					
+				<elem>
+					<paragraphe_corps><answer> Questions d'harmonisation...</answer></paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>Afin de pouvoir comparer les deux corpus principaux sur un pied d'égalité, nous avons, au moment du traitement, décidé d'harmoniser l'étiquetage utilisé dans les sorties XML.</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Capture : harmonisation des catégories grammaticales
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<image url="./images/harmonisation.png">
+						</image>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<return>
+						Retour au menu
+						</return>
+					</paragraphe_corps>
+				</elem>
+								
+			</exercice_corps>
+			
+	</exercice>
+	
+	<!-- Scripts -->
+	
+	<exercice id="script">
+		<id>script</id>
+			<exercice_intro>
+				<titre_paragraphe> Scripts</titre_paragraphe>
+				<paragraphe>Nous avons fait des scripts, eh oui !</paragraphe>
+			</exercice_intro>
+			<exercice_corps>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Intéressant, dites-nous en plus !
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<titre_corps>Lien vers les scripts</titre_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<lien url="./liens/script.py">
+						Lien vers les scripts
+						</lien>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps><answer> Le saviez-vous ?</answer></paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Ce texte va être chan-mé !
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<return>
+						Retour au menu
+						</return>
+					</paragraphe_corps>
+				</elem>
+				
+			</exercice_corps>
+	</exercice>
+	
+	<!-- Tableau -->
+	
+	<exercice id="tab">
+		<id>tab</id>
+			<exercice_intro>
+				<titre_paragraphe> Tableau</titre_paragraphe>
+				<paragraphe>Ici, nous parlerons du tableau.</paragraphe>
+			</exercice_intro>
+			<exercice_corps>
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Quel joli tableau, pourrai-je avoir le lien ?
+						</text>
+					</paragraphe_corps>
+				</elem>
+			
+				<elem>
+					<paragraphe_corps>
+						<lien url="./liens/tableau.html">
+						Oui
+						</lien>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Toujorus du script, encore du script !
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps><answer> Point important</answer></paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Ceci est un placeholder
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<liste>
+						<elem_liste><lien-content url="./liens/exo_12/3208_12.xml">Un lien dans une liste</lien-content></elem_liste>
+						<elem_liste><lien-content url="./liens/exo_12/3208_12_3.xml">Un lien dans une liste</lien-content></elem_liste>
+						<elem_liste><lien-content url="./liens/exo_12/NOM-PREP-NOM.xml">Un lien dans une liste</lien-content></elem_liste>
+						</liste>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<liste>
+						<elem_liste><text-content>Du code dans une liste</text-content><code-content>Trop fort</code-content></elem_liste>
+						<elem_liste><text-content>Encore du code</text-content><code-content>Wahou wahou</code-content></elem_liste>
+						</liste>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<return>
+						Retour au menu
+						</return>
+					</paragraphe_corps>
+				</elem>
+				
+			</exercice_corps>
+	</exercice>
+	
+	<!-- Conclusion -->
+	
+	<exercice id="concl">
+		<id>concl</id>
+			<exercice_intro>
+				<titre_paragraphe> Conclusion</titre_paragraphe>
+				<paragraphe>Il était temps</paragraphe>
+			</exercice_intro>
+			<exercice_corps>
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Nous conclurons plus tard
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps><answer> Lumière sur...</answer></paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						La transformation XSLT
+						</text>
+					</paragraphe_corps>
+				</elem>
+
+				<elem>
+					<paragraphe_corps>
+						<return>
+						Retour au menu
+						</return>
+					</paragraphe_corps>
+				</elem>
+				
+			</exercice_corps>
+	</exercice>
+
+</corps>
+</document>
