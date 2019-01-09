@@ -7,7 +7,8 @@
 <!ELEMENT arbre (mot)+>
 <!ATTLIST arbre
   xmlns CDATA #FIXED ''
-  n CDATA #REQUIRED>
+  id CDATA #IMPLIED
+  n CDATA #IMPLIED>
 
 <!ELEMENT fichier EMPTY>
 <!ATTLIST fichier
