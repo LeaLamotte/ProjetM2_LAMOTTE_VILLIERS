@@ -2,7 +2,11 @@
 #________________________________________________________
 #______________________SYNOPSIS__________________________
 #________________________________________________________
-#Exectution : python3 Rhapsodie2XML.py
+
+# exectution : python3 Rhapsodie2XML.py
+# coding: utf-8
+# auteur : Lamotte-Villiers
+# date : 07/01/2019
 
 import os
 import re
@@ -54,6 +58,8 @@ def structure2xml(structure):
                     continue
                 else:
                     t=token[0].replace('&', '&amp;')
+                    t=t.replace('>', '&gt;')
+                    t=t.replace('<', '&lt;')
                     texte += '            <token>'+t+'</token>\n'
             texte += '        </mot>\n'
         texte += '    </arbre>\n'

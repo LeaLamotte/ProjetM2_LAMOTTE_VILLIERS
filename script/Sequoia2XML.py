@@ -3,7 +3,7 @@
 #______________________SYNOPSIS__________________________
 #________________________________________________________
 
-# exectution : python3 Rhapsodie2XML.py
+# exectution : python3 Sequoia2XML.py ../data/sequoia-8.2/sequoia.deep_and_surf.conll
 # coding: utf-8
 # auteur : Lamotte-Villiers
 # date : 07/01/2019
@@ -12,6 +12,9 @@ class Word: # on définit une classe Word
     """ Classe Word : définit un mot de la langue au format CoNLL-U """
     
     def __init__(self, line):
+        line=line.replace('&', '&amp;')
+        line=line.replace('>', '&gt;')
+        line=line.replace('<', '&lt;')
         line = line.strip().split('\t')
         self.id, self.form = line[0], line[1]
         self.lemma, self.upos = line[2], line[3]
@@ -45,17 +48,21 @@ import sys,os
 data_in = sys.argv[1]
 parsed = read_file(data_in)
 data_out = open("Sequoia.xml","w",encoding="utf-8")
+data_out.write("<root>")
 
 # -> Conversion au format XML
 
 tree_id = 1
 for tree in parsed:
     line = ""
-    line += ("<arbre id=\"{}\">\n".format(tree_id))
+    line += ("\t<arbre id=\"{}\">\n".format(tree_id))
     for word in tree:
-        line += ("\t<mot pos=\"{}\">\n".format(word.upos))
-        line += ("\t\t<token>{}</token>\n".format(word.form))
-        line += ("\t</mot>\n")
-    line += ("</arbre>\n")
+        line += ("\t\t<mot pos=\"{}\">\n".format(word.upos))
+        line += ("\t\t\t<token>{}</token>\n".format(word.form))
+        line += ("\t\t</mot>\n")
+    line += ("\t</arbre>\n")
     data_out.write(line)
     tree_id += 1
+
+data_out.write("</root>")
+data_out.close()
