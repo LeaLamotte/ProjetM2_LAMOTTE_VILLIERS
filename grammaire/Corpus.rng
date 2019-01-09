@@ -3,31 +3,21 @@
   <start>
     <element name="root">
       <oneOrMore>
-        <choice>
-          <element name="arbre">
-            <choice>
-              <attribute name="n">
-                <data type="integer"/>
-              </attribute>
-              <attribute name="id">
-                <data type="integer"/>
-              </attribute>
-            </choice>
-            <oneOrMore>
-              <element name="mot">
-                <attribute name="pos"/>
-                <oneOrMore>
-                  <element name="token">
-                    <text/>
-                  </element>
-                </oneOrMore>
-              </element>
-            </oneOrMore>
-          </element>
-          <element name="fichier">
-            <attribute name="nom"/>
-          </element>
-        </choice>
+        <element name="arbre">
+          <attribute name="id">
+            <data type="integer"/>
+          </attribute>
+          <oneOrMore>
+            <element name="mot">
+              <attribute name="pos"/>
+              <oneOrMore>
+                <element name="token">
+                  <text/>
+                </element>
+              </oneOrMore>
+            </element>
+          </oneOrMore>
+        </element>
       </oneOrMore>
     </element>
   </start>

@@ -44,7 +44,7 @@ def structure2xml(structure):
     'Pre' : 'P', 'Pre+D' : 'P+D', 'Pre+Qu' : 'P+PRO'}
     for arbre in sorted(structure.keys()):#Pour chaque arbre/cle
         #On ouvre une balise arbre (numérotée)
-        texte += '    <arbre n="'+str(arbre)+'">\n'
+        texte += '    <arbre id="'+str(arbre)+'">\n'
         for mot in structure[arbre]:#Pour chaque mot dans cet arbre
             #On ouvre une balise mot, et on en note la POS
             try: #Celle du sequoia quand c'est possible
@@ -91,10 +91,7 @@ with open(s_path, 'w', encoding='UTF-8') as sortie:
                     #On hierarchise les annotations
                     root = structure(annotations)
                     xml = structure2xml(root)
-                #Pour chaque fichier on place une balise autofermante
-                #Nous rappelant son nom
-                sortie.write('    <fichier nom="'+fichier+'"/>\n')
-                #On écrit ensuite le XML produit à partir du tabulaire
+                #Pour chaque fichier on écrit le XML produit à partir du tabulaire
                 sortie.write(xml)
     #Enfin on ferme la balise racine
     sortie.write('</root>') 

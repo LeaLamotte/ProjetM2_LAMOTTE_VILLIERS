@@ -1,19 +1,13 @@
 <?xml encoding="UTF-8"?>
 
-<!ELEMENT root (arbre|fichier)+>
+<!ELEMENT root (arbre)+>
 <!ATTLIST root
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT arbre (mot)+>
 <!ATTLIST arbre
   xmlns CDATA #FIXED ''
-  id CDATA #IMPLIED
-  n CDATA #IMPLIED>
-
-<!ELEMENT fichier EMPTY>
-<!ATTLIST fichier
-  xmlns CDATA #FIXED ''
-  nom CDATA #REQUIRED>
+  id CDATA #REQUIRED>
 
 <!ELEMENT mot (token)+>
 <!ATTLIST mot
