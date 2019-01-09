@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "../grammaire/Corpus.dtd">
 <root>
     <fichier nom="Rhap-D0001.micro_macro_prosody.tabular"/>
     <arbre n="1">

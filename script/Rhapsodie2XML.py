@@ -75,6 +75,8 @@ s_path=pathlib.Path('../xml/Rhapsodie.xml')
 
 
 with open(s_path, 'w', encoding='UTF-8') as sortie:
+    sortie.write('<?xml version="1.0"?>\n')
+    sortie.write('<!DOCTYPE note SYSTEM "../grammaire/Corpus.dtd">\n')
     sortie.write('<root>\n') # On créer la racine du fichier XML
     # Pour tous les fichiers du Corpus Rhapsodie
     for dossier, sous_dossiers, fichiers in os.walk('../data/Rhapsodie'):

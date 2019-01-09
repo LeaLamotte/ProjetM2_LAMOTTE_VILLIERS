@@ -1,4 +1,7 @@
-<root>	<arbre id="1">
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "../grammaire/Corpus.dtd">
+<root>
+	<arbre id="1">
 		<mot pos="N">
 			<token>Gutenberg</token>
 		</mot>
