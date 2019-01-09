@@ -1,2 +1,0 @@
-le site au format xml
-rapport.txt -> le rapport du projet
