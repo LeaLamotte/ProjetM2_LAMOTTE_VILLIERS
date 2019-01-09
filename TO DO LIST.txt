@@ -17,3 +17,32 @@ NEW :
 Tester l'utilisation des entités
 5/ Créer un tableau vers les visuels
 6/ Réorganiser l'arboresence de fichiers
+
+IDEES POUR REPONDRE A LA PROBLEMATIQUE (ORAL VS ECRIT)
+
+Spontanéité :
+
+1/ Analyse des cat. gram. par corpus (pourcentage)
+> Oral présente davantage d'interjection
+
+Présence de l'interlocuteur/contexte :
+
+2/ Analyse des cat. gram. par corpus (pourcentage)
+> Oral présente davantage de déictiques (ellipses)
+> Oral présente davantage de références à l'interlocuteur (tu, vous)
+
+Complexité de la langue :
+
+3/ Analyse de la longueur moyenne des phrases
+4/ Analyse de la taille du vocabulaire (mots uniques)
+5/ Analyse des hapax et courbe de Zipf
+> Oral présente des phrases plus courtes
+> Oral présente un vocabulaire moins vaste
+> Ecrit contient plus d'hapax ?
+
+Particularités grammaticales :
+
+6/ Analyse des négations et des expressions contractées
+7/ Analyse des motifs syntaxiques majoritaires
+> Oral omet le ne et présente des formes inédites comme l'apocope (ex : j'veux)
+> Ecrit présente des structures de phrases plus complexes ?
