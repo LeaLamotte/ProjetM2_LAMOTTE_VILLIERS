@@ -377,7 +377,27 @@
 					<titre_corps>Complexité de la langue</titre_corps>
 					<paragraphe_corps>
 						<text>
-						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente des phrases plus courtes et un vocabulaire moins vaste. De même, le corpus écrit contient plus d'hapax. On remarque également que le corpus écrit présente des structures de phrases plus complexes et plus longues en moyenne.
+						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente des phrases plus courtes mais un vocabulaire globalement aussi riche. Cependant cette diversité est probablement un artefact dû à la multitude de sujet abordés par les 57 sous-corpus de Rhapsodie.
+						</text>
+					</paragraphe_corps>
+				</elem>
+						
+						<elem>
+					<paragraphe_corps>
+						<tableau>
+							<ligne><data-h>Fichier</data-h><data-h>Rhapsodie</data-h><data-h>Sequoia</data-h></ligne>
+							<ligne><data-k>Longueur moyenne d'un arbre</data-k><data-k>12.34</data-k><data-k>22.2</data-k></ligne>
+							<ligne><data>Nombre de Tokens</data><data>35725</data><data>68802</data></ligne>
+							<ligne><data>Nombre de Types</data><data>4567</data><data>10036</data></ligne>
+							<ligne><data-o>Ratio (%)</data-o><data-o>12.78</data-o><data-o>14.59</data-o></ligne>
+						</tableau>
+					</paragraphe_corps>
+				</elem>
+
+				<elem>
+					<paragraphe_corps>
+						<text>
+						De même, le corpus écrit contient plus d'hapax. On remarque également que le corpus écrit présente des structures de phrases plus complexes et plus longues en moyenne.
 						</text>
 					</paragraphe_corps>
 				</elem>

@@ -6,6 +6,6 @@ let $MoyS := round(avg($SequA), 2)
 
 return 
 <table>
-<th><td>Fichier</td><td>Rhapsodie</td><td>Sequoia</td></th>
+<tr><td>Fichier</td><td>Rhapsodie</td><td>Sequoia</td></tr>
 <tr><td>Moyenne</td><td>{$MoyR}</td><td>{$MoyS}</td></tr>
 </table>
