@@ -1,0 +1,8 @@
+Avant toute chose, il est important de garder en tête que le corpus Rhapsodie est significativement plus petit que le corpus Sequoia.
+<img href="xquery/Comparaison_taille_corpus">
+
+Nous avons donc eu recours aux pourcentages pour évaluer la distribution des POS dans chaque type de discours et nous avons obtenus les résultats suivants:
+<img href="xquery/Repartition_POS.png">
+
+Comme on peut le constater à l'oeil nu, Sequoia contient une proportions de noms beaucoup plus importante que Rhapsodie, et ceux alors même que Sequoia ne considère pas les emprunts comme des parties du discours classiques, ce qui fait exploser la proportions des "Autres" qu'il contient.
+En contre partie, Rhapsodie contient d'avantage de verbes et d'interjections. Le nombre de déterminant est sensiblement identiques, alors que l'on aurait pu penser qu'à l'oral, leur usage en temps que phatiques lors des reformulations en décuplerait le nombre.

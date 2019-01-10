@@ -47,7 +47,7 @@ let $Saut := round(((count(collection('xml/Sequoia.xml')//mot[@pos="X"]) + count
 
 
 return <table>
-<th><td>Fichier</td><td>Taille</td><td>Noms(%)</td><td>Verbes(%)</td><td>Adjectifs(%)</td><td>Adverbes(%)</td><td>Conjonctions(%)</td><td>Clitiques(%)</td><td>Déterminants(%)</td><td>Pronoms(%)</td><td>Interjections(%)</td><td>Prépositions(%)</td><td>P+D(%)</td><td>P+Pro(%)</td><td>Autres(%)</td></th>
+<tr><td>Fichier</td><td>Taille</td><td>Noms(%)</td><td>Verbes(%)</td><td>Adjectifs(%)</td><td>Adverbes(%)</td><td>Conjonctions(%)</td><td>Clitiques(%)</td><td>Déterminants(%)</td><td>Pronoms(%)</td><td>Interjections(%)</td><td>Prépositions(%)</td><td>P+D(%)</td><td>P+Pro(%)</td><td>Autres(%)</td></tr>
 <tr>
 <td>Total</td><td>{$lg}</td><td>{$nom}</td><td>{$vb}</td><td>{$adj}</td><td>{$adv}</td><td>{$conj}</td><td>{$cl}</td><td>{$det}</td><td>{$pro}</td><td>{$int}</td><td>{$prep}</td><td>{$contr1}</td><td>{$contr2}</td><td>{$aut}</td>
 </tr>

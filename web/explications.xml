@@ -333,10 +333,42 @@
 				</elem>
 				
 				<elem>
-					<titre_corps>Spontanéité et présence du locuteur/de contexte</titre_corps>
 					<paragraphe_corps>
 						<text>
-						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente davantage d'interjections, de déictiques (ellipses) et de références à l'interlocuteur (tu, vous).
+						Avant toute chose, il est important de garder en tête que le corpus Rhapsodie est significativement plus petit que le corpus Sequoia.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<image url="./xquery/Comparaison_taille_corpus.png">
+						</image>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						Nous avons donc eu recours aux pourcentages pour évaluer la distribution des POS dans chaque type de discours et nous avons obtenus les résultats suivants:
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<image url="./xquery/Repartition_POS.png">
+						</image>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<titre_corps>Spontanéité et parties du discours</titre_corps>
+					<paragraphe_corps>
+						<text>
+						Comme on peut le constater à l'oeil nu, l'écrit contient une proportions de noms beaucoup plus importante que l'oral, et ce à quantité de pronoms comparable. Ce résultat est d'autant plus significatif que Sequoia ne considère pas les emprunts comme des parties du discours classiques, ce qui fait exploser la proportion des "Autres" qu'il contient.
+						En contre-partie, l'oral contient d'avantage de verbes et d'interjections. 
+						Le nombre de déterminant est sensiblement identique, alors que l'on aurait pu penser qu'à l'oral, leur usage en temps que phatiques lors des reformulations en décuplerait le nombre.
 						</text>
 					</paragraphe_corps>
 				</elem>
@@ -355,6 +387,15 @@
 					<paragraphe_corps>
 						<text>
 						Enfin, on constate après transformation des fichiers XML à l'aide de requêtes Xquery que le corpus oral omet certaines formes comme la double négation et présente des formes inédites comme l'apocope (ex : j'veux).
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<titre_corps>Spontanéité et présence du locuteur/de contexte</titre_corps>
+					<paragraphe_corps>
+						<text>
+						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente davantage d'interjections, de déictiques (ellipses) et de références à l'interlocuteur (tu, vous).
 						</text>
 					</paragraphe_corps>
 				</elem>
