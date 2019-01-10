@@ -1,5 +1,5 @@
 <table>
-<th><td>Mot</td><td>Rhapsodie</td><td>Sequoia</td></th>
+<tr><td>Mot</td><td>Rhapsodie</td><td>Sequoia</td></tr>
 {
   for $t in distinct-values(//mot[not(@pos="A") and not(@pos="N") and not(@pos="V") and not(@pos="ADV") and not(@pos="X")]/token/text())
 let $freqR := count(collection('xml/Rhapsodie.xml')//mot/token/text()[.=$t])

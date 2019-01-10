@@ -1,0 +1,762 @@
+<style>
+html {
+    width:600px;
+    float:center;
+    padding:10px; 
+	margin-left:400px;
+	}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	}
+
+table {
+	text-align: center;
+	border-color: black;
+	background-color: white;
+	width: 100%;
+	}
+	
+tr:hover { background: #111; color: #999; }
+
+#elem_1 { background-color: #D2E8B4; }
+#elem_2 { background-color: #8BAAFF; }
+#elem_3 { background-color: #E83D17; }
+#elem_4 { background-color: #FFFFFF; }
+
+</style><html>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <title>Repr&eacute;sentation XML - Projet sur l'analyse de corpus annot&eacute;s</title>
+   <header>
+      <div class="w3-container w3-white">
+         <h2>Repr&eacute;sentation XML -
+              Projet sur l'analyse de corpus annot&eacute;s
+         </h2>
+      </div>
+      <div class="w3-container w3-white">
+         <p>Projet r&eacute;alis&eacute; dans le cadre du cours XML au sein du master TAL de l'Inalco - M2S1 -
+              Auteur : L&eacute;a Lamotte - Victorien Villiers
+         </p>
+      </div>
+      <div class="w3-bar w3-light-grey">
+         			
+         <div class="w3-dropdown-hover"><a href="#pres" class="w3-button">Pr&eacute;sentation</a></div>
+         		
+         			
+         <div class="w3-dropdown-hover"><a href="#corpus" class="w3-button">Corpus</a></div>
+         		
+         			
+         <div class="w3-dropdown-hover"><a href="#script" class="w3-button">Scripts</a></div>
+         		
+         			
+         <div class="w3-dropdown-hover"><a href="#tab" class="w3-button">Tableau</a></div>
+         		
+         			
+         <div class="w3-dropdown-hover"><a href="#concl" class="w3-button">Conclusion</a></div>
+         		
+      </div>
+   </header>
+   <body>
+      <div id="pres" class="w3-container">
+         <h3><span class="w3-tag w3-teal">\( ^o^)/</span> Pr&eacute;sentation du projet
+         </h3>
+         <p>L'objectif de ce projet est d'analyser les ressemblances et les divergences de plusieurs corpus annot&eacute;s du fran&ccedil;ais, notamment
+            les &eacute;carts entre la langue orale et la langue &eacute;crite. Les corpus textuels sont des collections de documents vari&eacute;s, cens&eacute;s
+            repr&eacute;senter la langue dans un contexte particulier. L'analyse de ces textes &agrave; l'aide d'annotations et d'un format structur&eacute;
+            permet de mettre &agrave; jour leurs caract&eacute;ristiques et ainsi de faire &eacute;merger, notamment &agrave; l'aide de visuels et de traitements
+            vari&eacute;s (transformations XSL, requ&ecirc;tes Xquery), des similitudes ou, au contraire, des ruptures.
+         </p>
+         				
+         <h4>Probl&eacute;matique : &Eacute;crit VS Oral</h4>
+         <p>
+            						La probl&eacute;matique de notre projet consistera &agrave; faire transpara&icirc;tre, &agrave; l'aide de vastes jeux de donn&eacute;es, les divergence
+            et ressemblances entre les textes oraux et &eacute;crits. Souvent moins trait&eacute;s dans l'analyse de corpus, l'oral va pr&eacute;senter des
+            caract&eacute;ristiques singuli&egrave;res qu'on ne retrouve g&eacute;n&eacute;ralement pas &agrave; l'&eacute;crit, c'est ce que nous tenterons de pr&eacute;senter. Enfin,
+            on d&eacute;note &eacute;galement des &eacute;l&eacute;ments sp&eacute;cifiques aux textes &eacute;crits, nous verrons comment ils se manifestent dans le corpus, en
+            comparaison des textes oraux.
+            						
+         </p>
+         				
+         <h4></h4>
+         <p>
+            <h4><b>
+                  <div class="w3-light-grey"> Particularit&eacute;s des jeux de donn&eacute;es textuelles...</div></b></h4>
+            						Contrairement &agrave; des jeux de donn&eacute;es &laquo;&nbsp;classiques&nbsp;&raquo; comportant des donn&eacute;es num&eacute;riques (statistiques, informations g&eacute;ospatiales),
+            les donn&eacute;es textuelles n'offrent pas d'informations a priori. Une annotation sous forme de m&eacute;tadonn&eacute;es et un pr&eacute;traitement
+            des textes sont donc n&eacute;cessaires pour pouvoir effectuer une analyse plus fine des donn&eacute;es.
+            						
+         </p>
+         				
+         <h4>&Eacute;tapes du projet</h4>
+         <p>
+            						Notre projet se divise en plusieurs &eacute;tapes. Tout d'abord, nous passons par une phase de pr&eacute;traitement des fichiers contenant
+            les corpus annot&eacute;s, afin de cr&eacute;er une structure de donn&eacute;es au format XML, destin&eacute;es &agrave; l'analyse et &agrave; l'&eacute;valuation. Nous utilisons,
+            pour ce faire, plusieurs scripts en Python. Le format XML offre de nombreux avantage, notamment gr&acirc;ce aux langages de requ&ecirc;tes
+            permettant de tirer partie des m&eacute;tadonn&eacute;es et de la structure des donn&eacute;es pour pouvoir effectuer des op&eacute;rations de traitement
+            sur l'ensemble d'un corpus. Cette structure permet &eacute;galement d'obtenir un contenu uniforme, facile &agrave; parcourir et &agrave; &eacute;tudier.
+            Une fois les corpus bruts pr&eacute;trait&eacute;s, la deuxi&egrave;me t&acirc;che consiste &agrave; analyser les fichiers structur&eacute;s obtenus gr&acirc;ce &agrave; un ensemble
+            de requ&ecirc;tes et de traitements afin d'effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels
+            obtenus dans un tableau, afin d'acc&eacute;der facilement au r&eacute;sultats des traitements finaux. La pr&eacute;sente page de pr&eacute;sentation et
+            la page contenant le tableau sont &eacute;galement r&eacute;alis&eacute;es &agrave; partir de fichiers XML.
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						Sch&eacute;ma du processus de transformation
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p><img src="./images/process.png" class="w3-hover-opacity" style="max-width:100%;border:1px solid transparent;"></p>
+         				
+         				
+         <h4></h4>
+         <p><a href="#top" class="w3-btn w3-light-grey">
+               						Retour au menu
+               						</a></p>
+         				
+         			
+      </div>
+      <div id="corpus" class="w3-container">
+         <h3><span class="w3-tag w3-teal">\( ^o^)/</span> Corpus
+         </h3>
+         <p>Pour notre projet, nous sommes parti de l'analyse de deux corpus principaux, un premier regroupant exclusivement des extraits
+            de langue orale (corpus Rhapsodie), et un second compos&eacute; int&eacute;gralement de documents &eacute;crits (corpus Sequoia). 
+         </p>
+         				
+         <h4>Corpus Sequoia</h4>
+         <p>--------------
+            <ul>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Nom : </b></div>Deep Sequoia corpus
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Source : </b></div><a href="https://deep-sequoia.inria.fr/fr/">https://deep-sequoia.inria.fr/fr/</a></li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Taille (octets) : </b></div>11,2 Mo
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>&Eacute;chantillonnage et genre : </b></div> corpus de langue fran&ccedil;aise annot&eacute;, int&eacute;grant des informations sur les d&eacute;pendances syntaxiques de surface et profonde des
+                     mots, ainsi que leurs cat&eacute;gories grammaticales (arbres syntaxiques ou treebank) au format UD (CoNLL-u)
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Modalit&eacute; : </b></div>&eacute;crit, documents provenant d'Europarl, du corpus l'Est Republicain, des pages Wikip&eacute;dia de la communaut&eacute; France, et de l'agence
+                     europ&eacute;enne du m&eacute;dicament.
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Taille : </b></div>environ 3200 phrases 
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Annotations et outils : </b></div>annotation manuelle des cat&eacute;gories morpho-syntaxiques et de la structure syntagmatique en suivant les consignes d'annotation
+                     du French Treebank ; convention de transcription du corpus : <a href="https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf">https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf</a></li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Documentation : </b></div>corpus issu des travaux r&eacute;alis&eacute;s par les &eacute;quipes de l'INRIA, du LLF, du LORIA et du LabEx EFL. Articles de r&eacute;f&eacute;rence :
+                  </li>
+               </li>
+               <li>Marie Candito, Guy Perrier, Bruno Guillaume, Corentin Ribeyre, Kar&euml;n Fort, Djam&eacute; Seddah and &Eacute;ric de la Clergerie. (2014) Deep
+                  Syntax Annotation of the Sequoia French Treebank. Proc. of LREC 2014, Reykjavic, Iceland.
+               </li>
+               <li>Guy Perrier, Marie Candito, Bruno Guillaume, Corentin Ribeyre, Kar&euml;n Fort and Djam&eacute; Seddah. (2014) Un sch&eacute;ma d'annotation
+                  en d&eacute;pendances syntaxiques profondes pour le fran&ccedil;ais. Proc. of TALN 2014, Marseille, France.
+               </li>
+               <li>Marie Candito and Djam&eacute; Seddah. (2012) Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur
+                  par pont lexical, Proceedings of TALN'2012, Grenoble, France
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Licence et droit d'utilisation : </b></div>Licence LGPL-LR (Lesser General Public License For Linguistic Resources). Mention de l'article : Candito M. and Seddah D.,
+                     2012 : "Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical", Actes de
+                     TALN'2012, Grenoble, France
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Extrait : "cette exposition nous apprend [...]" </b></div>
+                     <div class="w3-code htmlHigh notranslate">1	Cette	ce	D	DET	g=f|n=s|s=dem	2	det	_	_<br>2	exposition	exposition	N	NC	g=f|n=s|s=c	4	suj:suj	_	_<br>3	nous	le	CL	CLO	n=p|p=1|s=obj	4	a_obj:a_obj	_	_<br>4	apprend	apprendre	V	V	dl=apprendre|dm=ind|m=ind|n=s|p=3|t=pst	0	root	_	_<br></div>
+                  </li>
+               </li>
+            </ul><a href="..\data\sequoia-8.2\sequoia.deep_and_surf.conll" class="w3-btn w3-light-grey">
+               						Corpus d'origine complet
+               						</a><a href="..\xml\Sequoia.xml" class="w3-btn w3-light-grey">
+               						Corpus XML apr&egrave;s traitement
+               						</a></p>
+         			
+         				
+         <h4>Corpus Rhapsodie</h4>
+         <p>--------------
+            <ul>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Nom : </b></div>Corpus Rhapsodie, version annot&eacute;e en microsyntaxe
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Source : </b></div><a href="https://www.projet-rhapsodie.fr/">https://www.projet-rhapsodie.fr/</a></li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Taille (octets) : </b></div>3,8 Mo
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>&Eacute;chantillonnage et genre : </b></div>corpus de fran&ccedil;ais parl&eacute; annot&eacute; pour la prosodie et la syntaxe, int&eacute;grant des informations sur les rections, d&eacute;pendances (arbres
+                     syntaxiques ou treebank) et cat&eacute;gories grammaticales  au format tabulaire
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Modalit&eacute; : </b></div>oral, &eacute;chantillon de 30 heures de parole, regroupant des transcriptions d'interview, de parole libre, de commentaires sportifs,
+                     etc. issus d'une compilation de corpus externes et internes au projet
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Taille : </b></div>retranscription de 30h de parole
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Annotations et outils : </b></div>annotation manuelle des d&eacute;pendances syntaxiques sur 6h de parole &agrave; l'aide du logiciel d'&eacute;dition Arbil (format IMDI), guide
+                     d'annotation utilis&eacute; : <a href="www.projet-rhapsodie.fr/wp-content/uploads/2017/04/Protocole-de-codage-microsyntaxique-2013-10-1.pdf">www.projet-rhapsodie.fr/wp-content/uploads/2017/04/Protocole-de-codage-microsyntaxique-2013-10-1.pdf</a></li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Documentation : </b></div>corpus annot&eacute; issus des travaux r&eacute;alis&eacute;s par les &eacute;quipes de MODYCO, de l'IRCAM, du LATTICE, de l'ERSS et du LPL. Lien vers
+                     les publications : https://www.projet-rhapsodie.fr/bibliographie/
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Licence et droit d'utilisation : </b></div>Licence Creative Commons Attribution, citation des sources des corpus dans le respect des propri&eacute;t&eacute;s intellectuelles selon
+                     qu'il s'agisse de corpus externe ou interne
+                  </li>
+               </li>
+               <li>
+                  <li>
+                     <div class="w3-pale-green"><b>Extrait : "est-ce [...]" </b></div>
+                     <div class="w3-code htmlHigh notranslate">D0001	1	1	est	$L1	B	est	&ecirc;tre	V	indicative	present	3	sg		0	root	0	root									O	B	B	O	O	O	O	O	O	O	O	O	O	O	B	mml2	B	lone-dis-strong	hmm2	B	dis-strong	hmm2	B	dis-strong	hmm2	B	Hh	0	0			2.2265	2.2665	189.99999999999994	114.99999999999999	97.16526451681739	95.04111744094945<br>D0001	1	2	-	$L1	B	-ce	ce	Cl			3	sg	masc	1	sub	1	sub									O	I	I	O	O	O	O	O	O	O	O	O	O	O	I	mml2	I	lone-dis-strong	hmm2	I	dis-strong	hmm2	I	dis-strong	hmm2	I	Hh	0	0			2.2665	2.4165	189.99999999999994	114.99999999999999	97.16526451681739	95.04111744094945<br></div>
+                  </li>
+               </li>
+            </ul><a href="..\data\Rhapsodie\Rhap-D0001.micro_macro_prosody.tabular" class="w3-btn w3-light-grey">
+               						Fichier du corpus d'origine
+               						</a><a href="..\xml\Rhapsodie.xml" class="w3-btn w3-light-grey">
+               						Corpus XML apr&egrave;s traitement
+               						</a></p>
+         			
+         					
+         				
+         <h4></h4>
+         <p>
+            <h4><b>
+                  <div class="w3-light-grey"> Questions d'harmonisation...</div></b></h4>
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>Afin de pouvoir comparer les deux corpus principaux sur un pied d'&eacute;galit&eacute;, nous avons, au moment du traitement, d&eacute;cid&eacute; d'harmoniser
+            l'&eacute;tiquetage utilis&eacute; dans les sorties XML. Par souci de simplicit&eacute;, nous avons conserv&eacute; l'&eacute;tiquetage du corpus Sequoia. Nous
+            avons &eacute;galement d&ucirc; faire quelques ajustement, notamment la fusion d'&eacute;tiquettes comme les conjonctions (en bleu dans le tableau
+            r&eacute;capitulatif). Nous avons &eacute;galement regroup&eacute; certaines &eacute;tiquettes n'apparaissant pas dans l'un ou l'autre des corpus. C'est
+            notamment le cas des &eacute;tiquettes &laquo;&nbsp;emprunt&nbsp;&raquo;, &laquo;&nbsp;ponctuation&nbsp;&raquo; et &laquo;&nbsp;pr&eacute;fixe&nbsp;&raquo;, pr&eacute;sentes dans le corpus Sequoia, mais absente
+            du corpus Rhapsodie, et des &eacute;tiquettes &laquo;&nbsp;inconnu&nbsp;&raquo; et &laquo;&nbsp;interrogatifs/relatifs&nbsp;&raquo; qui, &agrave; l'inverse, &eacute;taient pr&eacute;sentes dans
+            le corpus Rhapsodie mais inutilis&eacute;e dans le corpus &eacute;crit Sequoia (en rouge dans le tableau r&eacute;capitulatif).
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						Tableau r&eacute;capitulatif : harmonisation des cat&eacute;gories grammaticales
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            <table border="2">
+               <tr id="elem_1">
+                  <td><b>Rhapsodie</b></td>
+                  <td><b>Sequoia</b></td>
+                  <td><b>Signification</b></td>
+               </tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Adj</td>
+                  <td>A</td>
+                  <td>adjectif</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Adv</td>
+                  <td>ADV</td>
+                  <td>adverbe</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2">
+                  <td>CS</td>
+                  <td>C</td>
+                  <td>conjonction</td>
+               </tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2">
+                  <td>J</td>
+                  <td>---</td>
+                  <td>conjonction</td>
+               </tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Cl</td>
+                  <td>CL</td>
+                  <td>clitique</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>D</td>
+                  <td>D</td>
+                  <td>d&eacute;terminant</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>---</td>
+                  <td>ET</td>
+                  <td>emprunt</td>
+               </tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>I</td>
+                  <td>I</td>
+                  <td>interjection</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>N</td>
+                  <td>N</td>
+                  <td>nom</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Pre</td>
+                  <td>P</td>
+                  <td>pr&eacute;position</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Pre+D</td>
+                  <td>P+D</td>
+                  <td>pr&eacute;p.+d&eacute;t.</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Pre+Qu</td>
+                  <td>P+PRO</td>
+                  <td>auquel/lequel</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>---</td>
+                  <td>PONCT</td>
+                  <td>ponctuation</td>
+               </tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>---</td>
+                  <td>PREF</td>
+                  <td>pr&eacute;fixe</td>
+               </tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Pro</td>
+                  <td>PRO</td>
+                  <td>pronom</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>V</td>
+                  <td>V</td>
+                  <td>verbe</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>X</td>
+                  <td>---</td>
+                  <td>inconnu</td>
+               </tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>Qu</td>
+                  <td>---</td>
+                  <td>interrogatifs/relatifs</td>
+               </tr>
+               <tr id="elem_4"></tr>
+            </table>
+         </p>
+         				
+         				
+         <h4></h4>
+         <p><a href="#top" class="w3-btn w3-light-grey">
+               						Retour au menu
+               						</a></p>
+         								
+         			
+      </div>
+      <div id="script" class="w3-container">
+         <h3><span class="w3-tag w3-teal">\( ^o^)/</span> Scripts
+         </h3>
+         <p>Pour passer la premi&egrave;re &eacute;tape de transformation des fichiers bruts en fichiers XML, nous avons eu recours &agrave; des scripts de
+            conversion en Python. Le but de ces scripts est de traiter les donn&eacute;es au format tabulaire des corpus annot&eacute;s, afin de produire
+            des fichiers harmonis&eacute;s et exploitables. Compte tenu des diff&eacute;rences de format des deux corpus principaux, nous avons d&ucirc; cr&eacute;er
+            deux scripts distincts. 
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						Les deux corpus utilisant une structure de type treebank, nous avons choisi de partir sur une repr&eacute;sentation en arbres
+            syntaxiques, correspondant chacun aux phrases et syntagmes des documents du corpus. Chaque arbre syntaxique est lui-m&ecirc;me compos&eacute;
+            de tokens que nous avons balis&eacute; comme tel dans le fichier XML. Les cat&eacute;gories grammaticales (ou POS, "Part of Speech") ont
+            quant &agrave; elles &eacute;t&eacute; repr&eacute;sent&eacute;es &agrave; l'aide de param&egrave;tres au sein des balises. Nous avons &eacute;galement ajout&eacute; un niveau hi&eacute;rarchique
+            suppl&eacute;mentaire &laquo;&nbsp;mot&nbsp;&raquo;, &eacute;tant donn&eacute; qu'un m&ecirc;me mot peut &ecirc;tre compos&eacute; de plusieurs tokens, selon les r&egrave;gles d'annotation du
+            corpus Rhapsodie.
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						La premi&egrave;re partie du script consiste &agrave; analyser la structure des donn&eacute;es de d&eacute;part, afin de pouvoir les lire et les
+            r&eacute;cup&eacute;rer. Une fois le fichier parcouru et les donn&eacute;es analys&eacute;es, la deuxi&egrave;me &eacute;tape consiste &agrave; cr&eacute;er un fichier de sortie
+            pour les stocker respectant une grammaire XML donn&eacute;e. Nous avons d&eacute;cid&eacute;, afin de conserver un format homog&egrave;ne, d'utiliser
+            une grammaire unifi&eacute;e pour les deux fichiers XML en sortie au format DTD. Les scripts cr&eacute;&eacute;s ne n&eacute;cessitent pas d'installation
+            de biblioth&egrave;ques particuli&egrave;res et peuvent &ecirc;tre utilis&eacute;s directement sur les corpus bruts.
+            						
+         </p>
+         				
+         				
+         <h4>Lien vers les scripts</h4>
+         <p><a href="../script/Sequoia2XML.py" class="w3-btn w3-light-grey">
+               						Script Sequoia &gt; XML
+               						</a><a href="../script/Rhapsodie2XML.py" class="w3-btn w3-light-grey">
+               						Script Rhapsodie &gt; XML
+               						</a></p>
+         				
+         				
+         <h4></h4>
+         <p><a href="#top" class="w3-btn w3-light-grey">
+               						Retour au menu
+               						</a></p>
+         				
+         			
+      </div>
+      <div id="tab" class="w3-container">
+         <h3><span class="w3-tag w3-teal">\( ^o^)/</span> Tableau
+         </h3>
+         <p>Apr&egrave;s avoir balis&eacute; et converti les donn&eacute;es des fichiers, nous avons effectu&eacute; plusieurs requ&ecirc;tes sur les fichiers XML produits,
+            afin de comparer le r&eacute;sultat des deux corpus. Nous r&eacute;sumons les r&eacute;sultats analyses sous formes de tables et autres visualisations
+            au sein d'un m&ecirc;me tableau. Nous avons notamment cherch&eacute; &agrave; mettre &agrave; jour les principales diff&eacute;rences entre les deux corpus,
+            telles que les cat&eacute;gories grammaticales majoritaires, ou encore certaines caract&eacute;ristiques sp&eacute;cifiques, telles que la surabondance
+            de clitiques ou de d&eacute;ictiques, ou encore la richesse du vocabulaire.
+         </p>			
+         				
+         <h4></h4>
+         <p><a href="./liens/tableau.html" class="w3-btn w3-light-grey">
+               						Tableau
+               						</a></p>
+         				
+         				
+         <h4></h4>
+         <p><a href="#top" class="w3-btn w3-light-grey">
+               						Retour au menu
+               						</a></p>
+         				
+         			
+      </div>
+      <div id="concl" class="w3-container">
+         <h3><span class="w3-tag w3-teal">\( ^o^)/</span> R&eacute;sultats d'analyse
+         </h3>
+         <p>Nous pr&eacute;sentons ci-apr&egrave;s plusieurs r&eacute;sultats de nos analyses apr&egrave;s conversion et affichage des donn&eacute;es au format XML. La probl&eacute;matique
+            que nous avions soulev&eacute;e &eacute;tait celle des diff&eacute;rences entre deux corpus, l'un issu d'enregistrements oraux, l'autre d'une compilation
+            de textes &eacute;crits. Nous avons tent&eacute; lors de la phase de consitution des fichiers structur&eacute;s et de requ&ecirc;tes, d'orienter nos
+            traitements afin de faire ressortir principalement certaines annotations comme les parties du discours, ou encore certains
+            aspects comme la hi&eacute;rachisaiton sous forme d'arbres, afin de b&eacute;n&eacute;ficier de points de comparaison.
+         </p>				
+         				
+         <h4></h4>
+         <p>
+            <h4><b>
+                  <div class="w3-light-grey"> Plusieurs diff&eacute;rences...</div></b></h4>
+         </p>
+         				
+         				
+         <h4>Spontan&eacute;it&eacute; et parties du discours</h4>
+         <p>
+            						Avant toute chose, il est important de garder en t&ecirc;te que le corpus Rhapsodie est significativement plus petit que le
+            corpus Sequoia.
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p><img src="./xquery/Comparaison_taille_corpus.png" class="w3-hover-opacity" style="max-width:100%;border:1px solid transparent;"></p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						Nous avons donc eu recours aux pourcentages pour &eacute;valuer la distribution des POS dans chaque type de discours et nous
+            avons obtenus les r&eacute;sultats suivants:
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p><img src="./xquery/Repartition_POS.png" class="w3-hover-opacity" style="max-width:100%;border:1px solid transparent;"></p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						Comme on peut le constater &agrave; l'oeil nu, l'&eacute;crit contient une proportions de noms beaucoup plus importante que l'oral,
+            et ce &agrave; quantit&eacute; de pronoms comparable. Ce r&eacute;sultat est d'autant plus significatif que Sequoia ne consid&egrave;re pas les emprunts
+            comme des parties du discours classiques, ce qui fait exploser la proportion des "Autres" qu'il contient.
+            						En contre-partie, l'oral contient d'avantage de verbes et d'interjections. 
+            						Le nombre de d&eacute;terminant est sensiblement identique, alors que l'on aurait pu penser qu'&agrave; l'oral, leur usage en temps
+            que phatiques lors des reformulations en d&eacute;cuplerait le nombre.
+            						
+         </p>
+         				
+         				
+         <h4>Complexit&eacute; de la langue</h4>
+         <p>
+            						On constate gr&acirc;ce aux donn&eacute;es r&eacute;v&eacute;l&eacute;es dans les fichiers XML que le corpus oral pr&eacute;sente des phrases plus courtes mais
+            un vocabulaire globalement aussi riche. Cependant cette diversit&eacute; est probablement un artefact d&ucirc; &agrave; la multitude de sujet
+            abord&eacute;s par les 57 sous-corpus de Rhapsodie.
+            						
+         </p>
+         						
+         				
+         <h4></h4>
+         <p>
+            <table border="2">
+               <tr id="elem_1">
+                  <td><b>Fichier</b></td>
+                  <td><b>Rhapsodie</b></td>
+                  <td><b>Sequoia</b></td>
+               </tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2">
+                  <td>Longueur moyenne d'un arbre</td>
+                  <td>12.34</td>
+                  <td>22.2</td>
+               </tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Nombre de Tokens</td>
+                  <td>35725</td>
+                  <td>68802</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>Nombre de Types</td>
+                  <td>4567</td>
+                  <td>10036</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>Ratio (%)</td>
+                  <td>12.78</td>
+                  <td>14.59</td>
+               </tr>
+               <tr id="elem_4"></tr>
+            </table>
+         </p>
+         				
+         				
+         <h4>Particularit&eacute;s grammaticales</h4>
+         <p>
+            						Enfin, on constate apr&egrave;s transformation des fichiers XML &agrave; l'aide de requ&ecirc;tes Xquery que le corpus oral omet r&eacute;guli&egrave;rement
+            certaines formes comme la premi&egrave;re moiti&eacute; de double n&eacute;gation et pr&eacute;sente des formes in&eacute;dites comme les phatiques pr&eacute;sent&eacute;s
+            ci-dessous. Nous n'avons pas &eacute;tudier l'apocope (ex : j'veux) car nos deux corpus op&egrave;rent un traitement diff&eacute;rent des apostrophes
+            (comme en t&eacute;moigne l'exemple en rouge).
+            						
+         </p>
+         						
+         				
+         <h4></h4>
+         <p>
+            <table border="2">
+               <tr id="elem_1">
+                  <td><b>Mot</b></td>
+                  <td><b>Rhapsodie</b></td>
+                  <td><b>Sequoia</b></td>
+               </tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2">
+                  <td>ne</td>
+                  <td>99</td>
+                  <td>193</td>
+               </tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2">
+                  <td>pas</td>
+                  <td>379</td>
+                  <td>283</td>
+               </tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4"></tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>bah</td>
+                  <td>16</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>euh</td>
+                  <td>1014</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>eh</td>
+                  <td>32</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>ben</td>
+                  <td>68</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3"></tr>
+               <tr id="elem_4">
+                  <td>mh</td>
+                  <td>214</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_1"></tr>
+               <tr id="elem_2"></tr>
+               <tr id="elem_3">
+                  <td>jusqu</td>
+                  <td>40</td>
+                  <td>0</td>
+               </tr>
+               <tr id="elem_4"></tr>
+            </table>
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						De plus, la transcription de Rhapsodie ayant &eacute;t&eacute; effectu&eacute;e par &eacute;norm&eacute;ment de personnes diff&eacute;rentes &agrave; des &eacute;poques diff&eacute;rentes
+            selon des guides diff&eacute;rents (harmonis&eacute;s par la suite), nous ne pouvons pas garantir que les r&eacute;sultats auraient &eacute;t&eacute; pertinents.
+            						
+         </p>
+         				
+         				
+         <h4>Spontan&eacute;it&eacute; et pr&eacute;sence du locuteur/de contexte</h4>
+         <p>
+            						On constate gr&acirc;ce aux donn&eacute;es r&eacute;v&eacute;l&eacute;es par les fichiers XML que le corpus oral pr&eacute;sente davantage d'interjections, de
+            d&eacute;ictiques (ellipses) et de r&eacute;f&eacute;rences &agrave; l'interlocuteur (tu, vous).
+            						
+         </p>
+         				
+         				
+         <h4></h4>
+         <p>
+            						De m&ecirc;me, le corpus &eacute;crit contient plus d'hapax. On remarque &eacute;galement que le corpus &eacute;crit pr&eacute;sente des structures de
+            phrases plus complexes et plus longues en moyenne.
+            						
+         </p>
+         
+         				
+         <h4></h4>
+         <p><a href="#top" class="w3-btn w3-light-grey">
+               						Retour au menu
+               						</a></p>
+         				
+         			
+      </div>
+   </body>
+</html>
