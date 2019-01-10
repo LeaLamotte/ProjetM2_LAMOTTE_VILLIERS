@@ -24,11 +24,12 @@
  
  ### web
  ------ **html**
- ------ contient les pages web (html) "explication.html" et "tableau"
- ------ **css**
- ------ contient les feuilles de style css utilisées pour l'affichage des pages html
+ ------ contient les pages web (html) "explication.html" et "tableau.html"
  ------ **js**
  ------ contient les programmes javascript utilisés pour l'affichage des pages html
+ ------ **xquery**
+ ------ contient les résultats d'analyse au format html, les requêtes ayant permis de les générer au format xquery
+ ------ et les visuels réalisés à partir de ces données 
   
   
 Sources du corpus :
