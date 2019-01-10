@@ -72,7 +72,7 @@
 					<titre_corps>Étapes du projet</titre_corps>
 					<paragraphe_corps>
 						<text>
-						Notre projet se divise en plusieurs étapes. Tout d'abord, nous passons par une phase de prétraitement des fichiers contenant les corpus annotés, afin de créer une structure de données au format XML, destinées à l'analyse et à l'évaluation. Nous utilisons, pour ce faire, plusieurs scripts au format python. Le format XML offre de nombreux avantage, notamment grâce aux langages de requêtes permettant de tirer partie des métadonnées et de la structure des données pour pouvoir effectuer des opérations de traitement sur l'ensemble d'un corpus. Cette structure permet également d'obtenir un contenu uniforme, facile à parcourir et à étudier. Une fois les corpus bruts prétraités, la deuxième tâche consiste à analyser les fichiers structurés obtenus grâce à un ensemble de requêtes et de traitements afin d'effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels obtenus dans un tableau, afin d'accéder facilement au résultats des traitements finaux. La présente page de présentation et la page contenant le tableau sont également réalisées à partir de fichiers XML.
+						Notre projet se divise en plusieurs étapes. Tout d'abord, nous passons par une phase de prétraitement des fichiers contenant les corpus annotés, afin de créer une structure de données au format XML, destinées à l'analyse et à l'évaluation. Nous utilisons, pour ce faire, plusieurs scripts en Python. Le format XML offre de nombreux avantage, notamment grâce aux langages de requêtes permettant de tirer partie des métadonnées et de la structure des données pour pouvoir effectuer des opérations de traitement sur l'ensemble d'un corpus. Cette structure permet également d'obtenir un contenu uniforme, facile à parcourir et à étudier. Une fois les corpus bruts prétraités, la deuxième tâche consiste à analyser les fichiers structurés obtenus grâce à un ensemble de requêtes et de traitements afin d'effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels obtenus dans un tableau, afin d'accéder facilement au résultats des traitements finaux. La présente page de présentation et la page contenant le tableau sont également réalisées à partir de fichiers XML.
 						</text>
 					</paragraphe_corps>
 				</elem>
@@ -192,7 +192,7 @@
 				
 				<elem>
 					<paragraphe_corps>
-						<text>Afin de pouvoir comparer les deux corpus principaux sur un pied d'égalité, nous avons, au moment du traitement, décidé d'harmoniser l'étiquetage utilisé dans les sorties XML. Par souci de simplicité, nous avons conservé l'étiquetage du corpus Sequoia. Nous avons également dû faire quelques ajustement, notamment la fusion d'étiquettes comme les clitiques (en bleu dans le tableau récapitulatif). Nous avons également supprimé certaines étiquettes n'apparaissant pas dans l'un ou l'autre des corpus. C'est notamment le cas des étiquettes « emprunt », « ponctuation » et « préfixe », présentes dans le corpus Sequoia, mais absente du corpus Rhapsodie, et des étiquettes « inconnu » et « interrogatifs/relatifs » qui, à l'inverse, étaient présentes dans le corpus Rhapsodie mais inutilisée dans le corpus écrit Sequoia (en rouge dans le tableau récapitulatif).</text>
+						<text>Afin de pouvoir comparer les deux corpus principaux sur un pied d'égalité, nous avons, au moment du traitement, décidé d'harmoniser l'étiquetage utilisé dans les sorties XML. Par souci de simplicité, nous avons conservé l'étiquetage du corpus Sequoia. Nous avons également dû faire quelques ajustement, notamment la fusion d'étiquettes comme les conjonctions (en bleu dans le tableau récapitulatif). Nous avons également regroupé certaines étiquettes n'apparaissant pas dans l'un ou l'autre des corpus. C'est notamment le cas des étiquettes « emprunt », « ponctuation » et « préfixe », présentes dans le corpus Sequoia, mais absente du corpus Rhapsodie, et des étiquettes « inconnu » et « interrogatifs/relatifs » qui, à l'inverse, étaient présentes dans le corpus Rhapsodie mais inutilisée dans le corpus écrit Sequoia (en rouge dans le tableau récapitulatif).</text>
 					</paragraphe_corps>
 				</elem>
 				
@@ -210,9 +210,9 @@
 							<ligne><data-h>Rhapsodie</data-h><data-h>Sequoia</data-h><data-h>Signification</data-h></ligne>
 							<ligne><data>Adj</data><data>A</data><data>adjectif</data></ligne>
 							<ligne><data>Adv</data><data>ADV</data><data>adverbe</data></ligne>
-							<ligne><data>CS</data><data>C</data><data>conjonction</data></ligne>
-							<ligne><data-k>J</data-k><data-k>---</data-k><data-k>clitique</data-k></ligne>
-							<ligne><data-k>Cl</data-k><data-k>CL</data-k><data-k>clitique</data-k></ligne>
+							<ligne><data-k>CS</data-k><data-k>C</data-k><data-k>conjonction</data-k></ligne>
+							<ligne><data-k>J</data-k><data-k>---</data-k><data-k>conjonction</data-k></ligne>
+							<ligne><data>Cl</data><data>CL</data><data>clitique</data></ligne>
 							<ligne><data>D</data><data>D</data><data>déterminant</data></ligne>
 							<ligne><data-o>---</data-o><data-o>ET</data-o><data-o>emprunt</data-o></ligne>
 							<ligne><data>I</data><data>I</data><data>interjection</data></ligne>
@@ -248,7 +248,7 @@
 		<id>script</id>
 			<exercice_intro>
 				<titre_paragraphe> Scripts</titre_paragraphe>
-				<paragraphe>Pour passer la première étape de transformation des fichiers bruts en fichiers XML, nous avons eu recours à des scripts de conversion au format Python. Le but de ces scripts est de traiter les données au format tabulaire des corpus annotés, afin de produire des fichiers harmonisés et exploitables. Compte tenu des différences de format des deux corpus principaux, nous avons dû créer deux scripts distincts. </paragraphe>
+				<paragraphe>Pour passer la première étape de transformation des fichiers bruts en fichiers XML, nous avons eu recours à des scripts de conversion en Python. Le but de ces scripts est de traiter les données au format tabulaire des corpus annotés, afin de produire des fichiers harmonisés et exploitables. Compte tenu des différences de format des deux corpus principaux, nous avons dû créer deux scripts distincts. </paragraphe>
 			</exercice_intro>
 			<exercice_corps>
 				
@@ -325,7 +325,7 @@
 		<id>concl</id>
 			<exercice_intro>
 				<titre_paragraphe> Résultats d'analyse</titre_paragraphe>
-				<paragraphe>Nous présentons ci-après plusieurs résultats de nos analyses après conversion et affichage des données au format XML. La problématique que nous avions soulevée était celle des difféérences entre deux corpus, l'un issu d'enregistrements oraux, l'autre d'une compilation de textes écrits. Nous avons tenté lors de la phase de consitution des fichiers structurés et de requêtes, d'orienter nos traitements afin de faire ressortir principalement certaines annotations comme les parties du discours, ou encore certains aspects comme la hiérachisaiton sous forme d'arbres, afin de bénéficier de points de comparaison.</paragraphe>
+				<paragraphe>Nous présentons ci-après plusieurs résultats de nos analyses après conversion et affichage des données au format XML. La problématique que nous avions soulevée était celle des différences entre deux corpus, l'un issu d'enregistrements oraux, l'autre d'une compilation de textes écrits. Nous avons tenté lors de la phase de consitution des fichiers structurés et de requêtes, d'orienter nos traitements afin de faire ressortir principalement certaines annotations comme les parties du discours, ou encore certains aspects comme la hiérachisaiton sous forme d'arbres, afin de bénéficier de points de comparaison.</paragraphe>
 			</exercice_intro>
 			<exercice_corps>				
 				<elem>
