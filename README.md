@@ -34,4 +34,4 @@
 Sources du corpus :
 Notre corpus est constitué des tree-banks **Deep-Sequoia** (disponibles via https://deep-sequoia.inria.fr/)
 et **Rhapsodie** (disponibles via https://www.projet-rhapsodie.fr/static/).  
-C'est deux corpus sont également disponibles sur http://universaldependencies.org sous les noms **French-Sequoia** et **Spoken French**.
+Ces deux corpus sont également disponibles sur http://universaldependencies.org sous les noms **French-Sequoia** et **Spoken French**.

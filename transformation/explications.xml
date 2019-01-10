@@ -302,7 +302,7 @@
 			<exercice_corps>			
 				<elem>
 					<paragraphe_corps>
-						<button url="./liens/tableau.html">
+						<button url="./tableau.html">
 						Tableau
 						</button>
 					</paragraphe_corps>
@@ -429,7 +429,7 @@
 				
 				<elem>
 					<paragraphe_corps>
-						<button url="./liens/tableau.html">
+						<button url="./tableau.html">
 						Tableau
 						</button>
 					</paragraphe_corps>

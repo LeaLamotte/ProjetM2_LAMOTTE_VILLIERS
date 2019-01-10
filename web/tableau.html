@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Léa Lamotte - Victorien Villiers"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+		<script type="application/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="application/javascript" src="js/script.js"></script>
+		
+		<style>
+			html { width:600px; float:center; padding:10px; margin-left:400px; }
+			ul { list-style-type: none; padding-left: 0; }
+			table { text-align: center; border-color: black; background-color: white; width: 100%; }
+			tr:hover { background: #111; color: #999; }
+			#elem_1 { background-color: #D2E8B4; }
+		</style>
+	</head>
+		
+	<body>
+		<header>
+			<div class="w3-container w3-white">
+				<h2>
+					Tableau des résultats - Projet sur l'analyse de corpus annotés
+				</h2>
+			</div>
+			<div class="w3-container w3-white">
+				<p>
+					Projet réalisé dans le cadre du cours XML au sein du master TAL de l'Inalco - M2S1 - Auteur : Léa Lamotte - Victorien Villiers
+				</p>
+			</div>
+		</header>
+		<div class="w3-container">
+			<h3>
+				<span class="w3-tag w3-teal">\( ^o^)/</span>
+				Tableau récapitulatif
+			</h3>
+			<p>
+				Le présent tableau recense toutes les requêtes et éléments affichés à parti des XML générés.
+			</p>
+		
+			<p>
+				<table border = "2">
+					<tr id="elem_1"><td colspan="4">Tableau des catégories grammaticales (POS, Part of Speech)</td></tr>
+					<tr><td><input type="reset" id="masque_tr" value="+/-" /></td><td width="20%">Lien vers</td><td width="40%"><a href="./xquery/tableau_POS.html">tableau HTML</a></td><td width="40%"><a href="./xquery/tableau_POS.xquery">requête Xquery</a></td></tr>
+					<tr><td colspan="4" class="toggle"><img src="./xquery/Repartition_POS.png" class="w3-hover-opacity" style="max-width:100%;border:1px solid transparent;"/></td></tr>
+				</table>
+			</p>
+			<p>
+				<table border = "2">
+					<tr id="elem_1"><td colspan="4">Taille et richesse du vocabulaire</td></tr>
+					<tr><td><input type="reset" id="masque_tr_2" value="+/-" /></td><td width="20%">Lien vers</td><td width="40%"><a href="./xquery/Richesse_voc.html">tableau HTML</a></td><td width="40%"><a href="./xquery/Richesse_voc.xquery">requête Xquery</a></td></tr>
+					<tr><td colspan="4" class="toggle_2"><img src="./xquery/Comparaison_taille_corpus.png" class="w3-hover-opacity" style="max-width:100%;border:1px solid transparent;"/></td></tr>
+				</table>
+			</p>
+			<p>
+				<table border = "2">
+					<tr id="elem_1"><td colspan="4">Distribution des mots</td></tr>
+					<tr><td width="20%">Lien vers</td><td width="40%"><a href="./xquery/distribution_mots.html">tableau HTML</a></td><td width="40%"><a href="./xquery/distribution_mots.xquery">requête Xquery</a></td></tr>
+				</table>
+			</p>
+			<p>
+				<table border = "2">
+					<tr id="elem_1"><td colspan="4">Mots grammaticaux</td></tr>
+					<tr><td width="20%">Lien vers</td><td width="40%"><a href="./xquery/Mots_grammaticaux.html">tableau HTML</a></td><td width="40%"><a href="./xquery/Mots_grammaticaux.xquery">requête Xquery</a></td></tr>
+				</table>
+			</p>
+			<p>
+				<table border = "2">
+					<tr id="elem_1"><td colspan="4">Tableau des arbres</td></tr>
+					<tr><td width="20%">Lien vers</td><td width="40%"><a href="./xquery/Tableau_arbres.html">tableau HTML</a></td><td width="40%"><a href="./xquery/Tableau_arbres.xquery">requête Xquery</a></td></tr>
+					
+				</table>
+			</p>
+		</div>
+		
+		
+	</body>
+
+</html>
