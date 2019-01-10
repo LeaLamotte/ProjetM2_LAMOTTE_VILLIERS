@@ -6,3 +6,13 @@ Nous avons donc eu recours aux pourcentages pour évaluer la distribution des PO
 
 Comme on peut le constater à l'oeil nu, Sequoia contient une proportions de noms beaucoup plus importante que Rhapsodie, et ceux alors même que Sequoia ne considère pas les emprunts comme des parties du discours classiques, ce qui fait exploser la proportions des "Autres" qu'il contient.
 En contre partie, Rhapsodie contient d'avantage de verbes et d'interjections. Le nombre de déterminant est sensiblement identiques, alors que l'on aurait pu penser qu'à l'oral, leur usage en temps que phatiques lors des reformulations en décuplerait le nombre.
+
+
+<tr><td>ne</td><td>99</td><td>193</td></tr>
+<tr><td>pas</td><td>379</td><td>283</td></tr>
+<tr><td>bah</td><td>16</td><td>0</td></tr>
+<tr><td>euh</td><td>1014</td><td>0</td></tr>
+<tr><td>eh</td><td>32</td><td>0</td></tr>
+<tr><td>ben</td><td>68</td><td>0</td></tr>
+<tr><td>mh</td><td>214</td><td>0</td></tr>
+<tr><td>jusqu</td><td>40</td><td>0</td></tr>

@@ -333,6 +333,7 @@
 				</elem>
 				
 				<elem>
+					<titre_corps>Spontanéité et parties du discours</titre_corps>
 					<paragraphe_corps>
 						<text>
 						Avant toute chose, il est important de garder en tête que le corpus Rhapsodie est significativement plus petit que le corpus Sequoia.
@@ -363,7 +364,6 @@
 				</elem>
 				
 				<elem>
-					<titre_corps>Spontanéité et parties du discours</titre_corps>
 					<paragraphe_corps>
 						<text>
 						Comme on peut le constater à l'oeil nu, l'écrit contient une proportions de noms beaucoup plus importante que l'oral, et ce à quantité de pronoms comparable. Ce résultat est d'autant plus significatif que Sequoia ne considère pas les emprunts comme des parties du discours classiques, ce qui fait exploser la proportion des "Autres" qu'il contient.
@@ -377,12 +377,12 @@
 					<titre_corps>Complexité de la langue</titre_corps>
 					<paragraphe_corps>
 						<text>
-						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente des phrases plus courtes mais un vocabulaire globalement aussi riche. Cependant cette diversité est probablement un artefact dû à la multitude de sujet abordés par les 57 sous-corpus de Rhapsodie.
+						On constate grâce aux données révélées dans les fichiers XML que le corpus oral présente des phrases plus courtes mais un vocabulaire globalement aussi riche. Cependant cette diversité est probablement un artefact dû à la multitude de sujet abordés par les 57 sous-corpus de Rhapsodie.
 						</text>
 					</paragraphe_corps>
 				</elem>
 						
-						<elem>
+				<elem>
 					<paragraphe_corps>
 						<tableau>
 							<ligne><data-h>Fichier</data-h><data-h>Rhapsodie</data-h><data-h>Sequoia</data-h></ligne>
@@ -393,20 +393,36 @@
 						</tableau>
 					</paragraphe_corps>
 				</elem>
-
-				<elem>
-					<paragraphe_corps>
-						<text>
-						De même, le corpus écrit contient plus d'hapax. On remarque également que le corpus écrit présente des structures de phrases plus complexes et plus longues en moyenne.
-						</text>
-					</paragraphe_corps>
-				</elem>
 				
 				<elem>
 					<titre_corps>Particularités grammaticales</titre_corps>
 					<paragraphe_corps>
 						<text>
-						Enfin, on constate après transformation des fichiers XML à l'aide de requêtes Xquery que le corpus oral omet certaines formes comme la double négation et présente des formes inédites comme l'apocope (ex : j'veux).
+						Enfin, on constate après transformation des fichiers XML à l'aide de requêtes Xquery que le corpus oral omet régulièrement certaines formes comme la première moitié de double négation et présente des formes inédites comme les phatiques présentés ci-dessous. Nous n'avons pas étudier l'apocope (ex : j'veux) car nos deux corpus opèrent un traitement différent des apostrophes (comme en témoigne l'exemple en rouge).
+						</text>
+					</paragraphe_corps>
+				</elem>
+						
+				<elem>
+					<paragraphe_corps>
+						<tableau>
+							<ligne><data-h>Mot</data-h><data-h>Rhapsodie</data-h><data-h>Sequoia</data-h></ligne>
+							<ligne><data-k>ne</data-k><data-k>99</data-k><data-k>193</data-k></ligne>
+							<ligne><data-k>pas</data-k><data-k>379</data-k><data-k>283</data-k></ligne>
+							<ligne><data>bah</data><data>16</data><data>0</data></ligne>
+							<ligne><data>euh</data><data>1014</data><data>0</data></ligne>
+							<ligne><data>eh</data><data>32</data><data>0</data></ligne>
+							<ligne><data>ben</data><data>68</data><data>0</data></ligne>
+							<ligne><data>mh</data><data>214</data><data>0</data></ligne>
+							<ligne><data-o>jusqu</data-o><data-o>40</data-o><data-o>0</data-o></ligne>
+						</tableau>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						De plus, la transcription de Rhapsodie ayant été effectuée par énormément de personnes différentes à des époques différentes selon des guides différents (harmonisés par la suite), nous ne pouvons pas garantir que les résultats auraient été pertinents.
 						</text>
 					</paragraphe_corps>
 				</elem>
@@ -416,6 +432,14 @@
 					<paragraphe_corps>
 						<text>
 						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente davantage d'interjections, de déictiques (ellipses) et de références à l'interlocuteur (tu, vous).
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						De même, le corpus écrit contient plus d'hapax. On remarque également que le corpus écrit présente des structures de phrases plus complexes et plus longues en moyenne.
 						</text>
 					</paragraphe_corps>
 				</elem>
