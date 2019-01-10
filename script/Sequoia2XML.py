@@ -47,7 +47,7 @@ def read_file(path): # on définit une fonction pour parcourir le fichier ConNLL
 import sys,os
 data_in = sys.argv[1]
 parsed = read_file(data_in)
-data_out = open("Sequoia.xml","w",encoding="utf-8")
+data_out = open("../xml/Sequoia.xml","w",encoding="utf-8")
 data_out.write('<?xml version="1.0"?>\n')
 data_out.write('<!DOCTYPE note SYSTEM "../grammaire/Corpus.dtd">\n')
 data_out.write("<root>\n")
