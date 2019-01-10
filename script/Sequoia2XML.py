@@ -13,9 +13,11 @@ class Word: # on definit une classe Word
     """ Classe Word : definit un mot de la langue au format CoNLL-U """
     
     def __init__(self, line):
+		#On nettoie la ligne
         line = line.replace('&', '&amp;')
         line = line.replace('>', '&gt;')
         line = line.replace('<', '&lt;')
+		#On la decoupe en colonnes
         line = line.strip().split('\t')
         self.id, self.form = line[0], line[1]
         self.lemma, self.upos = line[2], line[3]
