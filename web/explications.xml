@@ -49,22 +49,14 @@
 		<id>pres</id>
 			<exercice_intro>
 				<titre_paragraphe> Présentation du projet</titre_paragraphe>
-				<paragraphe>L'objectif de ce projet est d'analyser les ressemblances et les divergences de plusieurs corpus annotés du français, notamment les écarts entre la langue orale et la langue écrite. Les corpus textuels sont des collections de documents variés censés donner une représentation de la langue dans un contexte particulier. L'analyse de ces textes à l'aide d'annotations et d'un format structuré permet de mettre à jour leurs caractéristiques et ainsi de faire émerger, notamment à l'aide de visuels et de traitements variés (transformations XSL, visualisation Javascripts), des similitudes ou, au contraire, desr ruptures.</paragraphe>
+				<paragraphe>L'objectif de ce projet est d'analyser les ressemblances et les divergences de plusieurs corpus annotés du français, notamment les écarts entre la langue orale et la langue écrite. Les corpus textuels sont des collections de documents variés, censés représenter la langue dans un contexte particulier. L'analyse de ces textes à l'aide d'annotations et d'un format structuré permet de mettre à jour leurs caractéristiques et ainsi de faire émerger, notamment à l'aide de visuels et de traitements variés (transformations XSL, requêtes Xquery), des similitudes ou, au contraire, des ruptures.</paragraphe>
 			</exercice_intro>
 			<exercice_corps>
 				<elem>
-					<titre_corps>Procédure et structure de l'arborescence</titre_corps>
+					<titre_corps>Problématique : Écrit VS Oral</titre_corps>
 					<paragraphe_corps>
 						<text>
-						La problématique de notre projet consistera donc à faire transparaître, à l'aide de vastes jeux de données, les divergence et ressemblances entre les textes oraux et écrits. Souvent moins traités dans l'analyse de corpus, l'oral va présenter des caractéristiques particulières, c'est ce que nous tenterons de présenter. Enfin, on dénote également des particularités dans les textes écrits, nous verrons comment elles se manifestent dans le corpus, en regard d'autres textes oraux.
-						</text>
-					</paragraphe_corps>
-				</elem>
-				<elem>
-					<titre_corps>Écrit VS Oral</titre_corps>
-					<paragraphe_corps>
-						<text>
-						La problématique de notre projet consistera donc à faire transparaître, à l'aide de vastes jeux de données, les divergence et ressemblances entre les textes oraux et écrits. Souvent moins traités dans l'analyse de corpus, l'oral va présenter des caractéristiques particulières, c'est ce que nous tenterons de présenter. Enfin, on dénote également des particularités dans les textes écrits, nous verrons comment elles se manifestent dans le corpus, en regard d'autres textes oraux.
+						La problématique de notre projet consistera à faire transparaître, à l'aide de vastes jeux de données, les divergence et ressemblances entre les textes oraux et écrits. Souvent moins traités dans l'analyse de corpus, l'oral va présenter des caractéristiques singulières qu'on ne retrouve généralement pas à l'écrit, c'est ce que nous tenterons de présenter. Enfin, on dénote également des éléments spécifiques aux textes écrits, nous verrons comment ils se manifestent dans le corpus, en comparaison des textes oraux.
 						</text>
 					</paragraphe_corps>
 				</elem>
@@ -72,47 +64,16 @@
 					<paragraphe_corps><answer> Particularités des jeux de données textuelles...</answer></paragraphe_corps>
 					<paragraphe_corps>
 						<text>
-						Contrairement à des jeux de données « classiques » comportant des données numériques (statistiques, informations géospatiales), les données textuelles offrent peu d'informations a priori. Une annotation sous forme de métadonnées est plus que nécessaire pour pouvoir effectuer une analyse plus fine des données.
+						Contrairement à des jeux de données « classiques » comportant des données numériques (statistiques, informations géospatiales), les données textuelles n'offrent pas d'informations a priori. Une annotation sous forme de métadonnées et un prétraitement des textes sont donc nécessaires pour pouvoir effectuer une analyse plus fine des données.
 						</text>
 					</paragraphe_corps>
 				</elem>
 				<elem>
-					<titre_corps>Étapes du projet et arborescence</titre_corps>
+					<titre_corps>Étapes du projet</titre_corps>
 					<paragraphe_corps>
 						<text>
-						Notre projet se divise en plusieurs étapes. Tout d'abord, nous passons par une phase de prétraitement des fichiers contenant les corpus annotés, afin de créer une structure de données au format XML destinées à l'analyse et à l'évaluation. Nous utilisons pour faire plusieurs scripts au format python. Le format XML offre de nombreux avantage, notamment grâce aux langages de requêtes permettant de tirer partie des métadonnées et de la structure des données pour pouvoir effectuer des opérations de traitement sur l'ensemble d'un corpus. Cette structure permet également d'obtenir un contenu uniforme facile à parcourir à étudier. Une fois les corpus bruts prétraités, la deuxième tâche consiste à analyser les fichiers structurés obtenus grâce à un ensemble de requêtes et de traitements pour effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels obtenus dans un tableau, afin d'accéder facilement au résultats des traitements finaux. La présente page de présentation et la page contenant le tableau sont également réalisées à partir de fichiers XML.
+						Notre projet se divise en plusieurs étapes. Tout d'abord, nous passons par une phase de prétraitement des fichiers contenant les corpus annotés, afin de créer une structure de données au format XML, destinées à l'analyse et à l'évaluation. Nous utilisons, pour ce faire, plusieurs scripts au format python. Le format XML offre de nombreux avantage, notamment grâce aux langages de requêtes permettant de tirer partie des métadonnées et de la structure des données pour pouvoir effectuer des opérations de traitement sur l'ensemble d'un corpus. Cette structure permet également d'obtenir un contenu uniforme, facile à parcourir et à étudier. Une fois les corpus bruts prétraités, la deuxième tâche consiste à analyser les fichiers structurés obtenus grâce à un ensemble de requêtes et de traitements afin d'effectuer des comparaisons et diverses visualisations. Enfin, nous stockons les visuels obtenus dans un tableau, afin d'accéder facilement au résultats des traitements finaux. La présente page de présentation et la page contenant le tableau sont également réalisées à partir de fichiers XML.
 						</text>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<text>
-						Arborescence du projet
-						</text>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<image url="./images/arboresence.png">
-						</image>
-					</paragraphe_corps>
-				</elem>
-								
-				<elem>
-					<paragraphe_corps>
-						<text>
-						Exemple de représentation du corpus au format CoNNL
-						</text>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<lien url="./liens/corpus.connl">
-						Exemple de corpus au format CoNNL
-						</lien>
 					</paragraphe_corps>
 				</elem>
 				
@@ -126,7 +87,7 @@
 				
 				<elem>
 					<paragraphe_corps>
-						<image url="./images/schema.png">
+						<image url="./images/process.png">
 						</image>
 					</paragraphe_corps>
 				</elem>
@@ -149,26 +110,43 @@
 			<exercice_intro>
 				<titre_paragraphe> Corpus</titre_paragraphe>
 				<paragraphe>Pour notre projet, nous sommes parti de l'analyse de deux corpus principaux, un premier regroupant exclusivement des extraits de langue orale (corpus Rhapsodie), et un second composé intégralement de documents écrits (corpus Sequoia). </paragraphe>
+				<paragraphe>--------------</paragraphe>
 			</exercice_intro>
+			
 			<exercice_corps>
 				<elem>
 					<titre_corps>Corpus Sequoia</titre_corps>
 					<paragraphe_corps>
-						<liste_2>
-						<elem_liste><text-content><bold-content>Nom :</bold-content> Deep Sequoia corpus</text-content></elem_liste>
-						<elem_liste><text-content>Source : https://deep-sequoia.inria.fr/fr/</text-content></elem_liste>
-						<elem_liste><text-content>Échantillonnage et genre : corpus de langue française annoté, intégrant des informations sur les dépendances syntaxiques de surface et profonde des mots, ainsi que leurs catégories grammaticales (arbres syntaxiques ou treebank) au format UD (CoNLL-u)</text-content></elem_liste>
-						<elem_liste><text-content>Modalité : écrit, documents provenant d'Europarl, du corpus l'Est Republicain, des pages Wikipédia de la communauté France, et de l'agence européenne du médicament.</text-content></elem_liste>
-						<elem_liste><text-content>Taille : environ 3200 phrases </text-content></elem_liste>
-						<elem_liste><text-content>Annotations et outils : annotation manuelle des catégories morpho-syntaxiques et de la structure syntagmatique en suivant les consignes d'annotation du French Treebank ; convention de transcription du corpus : https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf</text-content></elem_liste>
-						<elem_liste><text-content>Documentation : corpus issu des travaux réalisés par les équipes de l'INRIA, du LLF, du LORIA et du LabEx EFL. Articles de référence :</text-content></elem_liste>
-						<elem_liste><text-content>Marie Candito, Guy Perrier, Bruno Guillaume, Corentin Ribeyre, Karën Fort, Djamé Seddah and Éric de la Clergerie. (2014) Deep Syntax Annotation of the Sequoia French Treebank. Proc. of LREC 2014, Reykjavic, Iceland.</text-content></elem_liste>
-						<elem_liste><text-content>Guy Perrier, Marie Candito, Bruno Guillaume, Corentin Ribeyre, Karën Fort and Djamé Seddah. (2014) Un schéma d'annotation en dépendances syntaxiques profondes pour le français. Proc. of TALN 2014, Marseille, France.</text-content></elem_liste>
-						<elem_liste><text-content>Marie Candito and Djamé Seddah. (2012) Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical, Proceedings of TALN'2012, Grenoble, France</text-content></elem_liste>
-						<elem_liste><text-content>Licence et droit d'utilisation : Licence LGPL-LR (Lesser General Public License For Linguistic Resources). Mention de l'article : Candito M. and Seddah D., 2012 : "Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical", Actes de TALN'2012, Grenoble, France</text-content></elem_liste>
-						<elem_liste><text-content>EXTRAIT</text-content></elem_liste>
-
-						</liste_2>
+						<text>--------------</text>
+						<liste_ul>
+							<elem_liste><compound-content><bold-content>Nom : </bold-content><text-content>Deep Sequoia corpus</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Source : </bold-content><lien-content url="https://deep-sequoia.inria.fr/fr/">https://deep-sequoia.inria.fr/fr/</lien-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Taille (octets) : </bold-content><text-content>11,2 Mo</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Échantillonnage et genre : </bold-content><text-content> corpus de langue française annoté, intégrant des informations sur les dépendances syntaxiques de surface et profonde des mots, ainsi que leurs catégories grammaticales (arbres syntaxiques ou treebank) au format UD (CoNLL-u)</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Modalité : </bold-content><text-content>écrit, documents provenant d'Europarl, du corpus l'Est Republicain, des pages Wikipédia de la communauté France, et de l'agence européenne du médicament.</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Taille : </bold-content><text-content>environ 3200 phrases </text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Annotations et outils : </bold-content><text-content>annotation manuelle des catégories morpho-syntaxiques et de la structure syntagmatique en suivant les consignes d'annotation du French Treebank ; convention de transcription du corpus : </text-content><lien-content url="https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf">https://deep-sequoia.inria.fr/deep-sequoia-guide.pdf</lien-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Documentation : </bold-content><text-content>corpus issu des travaux réalisés par les équipes de l'INRIA, du LLF, du LORIA et du LabEx EFL. Articles de référence :</text-content></compound-content></elem_liste>
+							<elem_liste><text-content>Marie Candito, Guy Perrier, Bruno Guillaume, Corentin Ribeyre, Karën Fort, Djamé Seddah and Éric de la Clergerie. (2014) Deep Syntax Annotation of the Sequoia French Treebank. Proc. of LREC 2014, Reykjavic, Iceland.</text-content></elem_liste>
+							<elem_liste><text-content>Guy Perrier, Marie Candito, Bruno Guillaume, Corentin Ribeyre, Karën Fort and Djamé Seddah. (2014) Un schéma d'annotation en dépendances syntaxiques profondes pour le français. Proc. of TALN 2014, Marseille, France.</text-content></elem_liste>
+							<elem_liste><text-content>Marie Candito and Djamé Seddah. (2012) Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical, Proceedings of TALN'2012, Grenoble, France</text-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Licence et droit d'utilisation : </bold-content><text-content>Licence LGPL-LR (Lesser General Public License For Linguistic Resources). Mention de l'article : Candito M. and Seddah D., 2012 : "Le corpus Sequoia : annotation syntaxique et exploitation pour l'adaptation d'analyseur par pont lexical", Actes de TALN'2012, Grenoble, France</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Extrait : "cette exposition nous apprend [...]" </bold-content><ml-code-content>
+							<ml-code-content-line>1	Cette	ce	D	DET	g=f|n=s|s=dem	2	det	_	_</ml-code-content-line>
+							<ml-code-content-line>2	exposition	exposition	N	NC	g=f|n=s|s=c	4	suj:suj	_	_</ml-code-content-line>
+							<ml-code-content-line>3	nous	le	CL	CLO	n=p|p=1|s=obj	4	a_obj:a_obj	_	_</ml-code-content-line>
+							<ml-code-content-line>4	apprend	apprendre	V	V	dl=apprendre|dm=ind|m=ind|n=s|p=3|t=pst	0	root	_	_</ml-code-content-line>
+							</ml-code-content></compound-content></elem_liste>
+						</liste_ul>
+						
+						<button url="..\data\sequoia-8.2\sequoia.deep_and_surf.conll">
+						Corpus d'origine complet
+						</button>
+						
+						<button url="..\xml\Sequoia.xml">
+						Corpus XML après traitement
+						</button>
+						
 					</paragraphe_corps>
 				</elem>
 			</exercice_corps>
@@ -177,18 +155,31 @@
 				<elem>
 					<titre_corps>Corpus Rhapsodie</titre_corps>
 					<paragraphe_corps>
-						<liste_2>
-						<elem_liste><text-content>Nom :</text-content></elem_liste>
-						<elem_liste><text-content>Source :</text-content></elem_liste>
-						<elem_liste><text-content>Échantillonnage et genre :</text-content></elem_liste>
-						<elem_liste><text-content>Modalité :</text-content></elem_liste>
-						<elem_liste><text-content>Taille :</text-content></elem_liste>
-						<elem_liste><text-content>Annotations et outils :</text-content></elem_liste>
-						<elem_liste><text-content>Documentation :</text-content></elem_liste>
-						<elem_liste><text-content>Licence et droit d'utilisation :</text-content></elem_liste>
-						<elem_liste><text-content>EXTRAIT</text-content></elem_liste>
-
-						</liste_2>
+						<text>--------------</text>
+						<liste_ul>
+							<elem_liste><compound-content><bold-content>Nom : </bold-content><text-content>Corpus Rhapsodie, version annotée en microsyntaxe</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Source : </bold-content><lien-content url="https://www.projet-rhapsodie.fr/">https://www.projet-rhapsodie.fr/</lien-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Taille (octets) : </bold-content><text-content>3,8 Mo</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Échantillonnage et genre : </bold-content><text-content>corpus de français parlé annoté pour la prosodie et la syntaxe, intégrant des informations sur les rections, dépendances (arbres syntaxiques ou treebank) et catégories grammaticales  au format tabulaire</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Modalité : </bold-content><text-content>oral, échantillon de 30 heures de parole, regroupant des transcriptions d'interview, de parole libre, de commentaires sportifs, etc. issus d'une compilation de corpus externes et internes au projet</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Taille : </bold-content><text-content>retranscription de 30h de parole</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Annotations et outils : </bold-content><text-content>annotation manuelle des dépendances syntaxiques sur 6h de parole à l'aide du logiciel d'édition Arbil (format IMDI), guide d'annotation utilisé : </text-content><lien-content url="www.projet-rhapsodie.fr/wp-content/uploads/2017/04/Protocole-de-codage-microsyntaxique-2013-10-1.pdf">www.projet-rhapsodie.fr/wp-content/uploads/2017/04/Protocole-de-codage-microsyntaxique-2013-10-1.pdf</lien-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Documentation : </bold-content><text-content>corpus annoté issus des travaux réalisés par les équipes de MODYCO, de l'IRCAM, du LATTICE, de l'ERSS et du LPL. Lien vers les publications : https://www.projet-rhapsodie.fr/bibliographie/</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Licence et droit d'utilisation : </bold-content><text-content>Licence Creative Commons Attribution, citation des sources des corpus dans le respect des propriétés intellectuelles selon qu'il s'agisse de corpus externe ou interne</text-content></compound-content></elem_liste>
+							<elem_liste><compound-content><bold-content>Extrait : "est-ce [...]" </bold-content><ml-code-content>
+							<ml-code-content-line>D0001	1	1	est	$L1	B	est	être	V	indicative	present	3	sg		0	root	0	root									O	B	B	O	O	O	O	O	O	O	O	O	O	O	B	mml2	B	lone-dis-strong	hmm2	B	dis-strong	hmm2	B	dis-strong	hmm2	B	Hh	0	0			2.2265	2.2665	189.99999999999994	114.99999999999999	97.16526451681739	95.04111744094945</ml-code-content-line>
+							<ml-code-content-line>D0001	1	2	-	$L1	B	-ce	ce	Cl			3	sg	masc	1	sub	1	sub									O	I	I	O	O	O	O	O	O	O	O	O	O	O	I	mml2	I	lone-dis-strong	hmm2	I	dis-strong	hmm2	I	dis-strong	hmm2	I	Hh	0	0			2.2665	2.4165	189.99999999999994	114.99999999999999	97.16526451681739	95.04111744094945</ml-code-content-line>
+							</ml-code-content></compound-content></elem_liste>
+						</liste_ul>
+						
+						<button url="..\data\Rhapsodie\Rhap-D0001.micro_macro_prosody.tabular">
+						Fichier du corpus d'origine
+						</button>
+						
+						<button url="..\xml\Rhapsodie.xml">
+						Corpus XML après traitement
+						</button>
+						
 					</paragraphe_corps>
 				</elem>
 			</exercice_corps>
@@ -201,22 +192,41 @@
 				
 				<elem>
 					<paragraphe_corps>
-						<text>Afin de pouvoir comparer les deux corpus principaux sur un pied d'égalité, nous avons, au moment du traitement, décidé d'harmoniser l'étiquetage utilisé dans les sorties XML.</text>
+						<text>Afin de pouvoir comparer les deux corpus principaux sur un pied d'égalité, nous avons, au moment du traitement, décidé d'harmoniser l'étiquetage utilisé dans les sorties XML. Par souci de simplicité, nous avons conservé l'étiquetage du corpus Sequoia. Nous avons également dû faire quelques ajustement, notamment la fusion d'étiquettes comme les clitiques (en bleu dans le tableau récapitulatif). Nous avons également supprimé certaines étiquettes n'apparaissant pas dans l'un ou l'autre des corpus. C'est notamment le cas des étiquettes « emprunt », « ponctuation » et « préfixe », présentes dans le corpus Sequoia, mais absente du corpus Rhapsodie, et des étiquettes « inconnu » et « interrogatifs/relatifs » qui, à l'inverse, étaient présentes dans le corpus Rhapsodie mais inutilisée dans le corpus écrit Sequoia (en rouge dans le tableau récapitulatif).</text>
 					</paragraphe_corps>
 				</elem>
 				
 				<elem>
 					<paragraphe_corps>
 						<text>
-						Capture : harmonisation des catégories grammaticales
+						Tableau récapitulatif : harmonisation des catégories grammaticales
 						</text>
 					</paragraphe_corps>
 				</elem>
 				
 				<elem>
 					<paragraphe_corps>
-						<image url="./images/harmonisation.png">
-						</image>
+						<tableau>
+							<ligne><data-h>Rhapsodie</data-h><data-h>Sequoia</data-h><data-h>Signification</data-h></ligne>
+							<ligne><data>Adj</data><data>A</data><data>adjectif</data></ligne>
+							<ligne><data>Adv</data><data>ADV</data><data>adverbe</data></ligne>
+							<ligne><data>CS</data><data>C</data><data>conjonction</data></ligne>
+							<ligne><data-k>J</data-k><data-k>---</data-k><data-k>clitique</data-k></ligne>
+							<ligne><data-k>Cl</data-k><data-k>CL</data-k><data-k>clitique</data-k></ligne>
+							<ligne><data>D</data><data>D</data><data>déterminant</data></ligne>
+							<ligne><data-o>---</data-o><data-o>ET</data-o><data-o>emprunt</data-o></ligne>
+							<ligne><data>I</data><data>I</data><data>interjection</data></ligne>
+							<ligne><data>N</data><data>N</data><data>nom</data></ligne>
+							<ligne><data>Pre</data><data>P</data><data>préposition</data></ligne>
+							<ligne><data>Pre+D</data><data>P+D</data><data>prép.+dét.</data></ligne>
+							<ligne><data>Pre+Qu</data><data>P+PRO</data><data>auquel/lequel</data></ligne>
+							<ligne><data-o>---</data-o><data-o>PONCT</data-o><data-o>ponctuation</data-o></ligne>
+							<ligne><data-o>---</data-o><data-o>PREF</data-o><data-o>préfixe</data-o></ligne>
+							<ligne><data>Pro</data><data>PRO</data><data>pronom</data></ligne>
+							<ligne><data>V</data><data>V</data><data>verbe</data></ligne>
+							<ligne><data-o>X</data-o><data-o>---</data-o><data-o>inconnu</data-o></ligne>
+							<ligne><data-o>Qu</data-o><data-o>---</data-o><data-o>interrogatifs/relatifs</data-o></ligne>
+						</tableau>
 					</paragraphe_corps>
 				</elem>
 				
@@ -238,39 +248,35 @@
 		<id>script</id>
 			<exercice_intro>
 				<titre_paragraphe> Scripts</titre_paragraphe>
-				<paragraphe>Nous avons fait des scripts, eh oui !</paragraphe>
+				<paragraphe>Pour passer la première étape de transformation des fichiers bruts en fichiers XML, nous avons eu recours à des scripts de conversion au format Python. Le but de ces scripts est de traiter les données au format tabulaire des corpus annotés, afin de produire des fichiers harmonisés et exploitables. Compte tenu des différences de format des deux corpus principaux, nous avons dû créer deux scripts distincts. </paragraphe>
 			</exercice_intro>
 			<exercice_corps>
 				
 				<elem>
 					<paragraphe_corps>
 						<text>
-						Intéressant, dites-nous en plus !
+						Les deux corpus utilisant une structure de type treebank, nous avons choisi de partir sur une représentation en arbres syntaxiques, correspondant chacun aux phrases et syntagmes des documents du corpus. Chaque arbre syntaxique est lui-même composé de tokens que nous avons balisé comme tel dans le fichier XML. Les catégories grammaticales (ou POS, "Part of Speech") ont quant à elles été représentées à l'aide de paramètres au sein des balises. Nous avons également ajouté un niveau hiérarchique supplémentaire « mot », étant donné qu'un même mot peut être composé de plusieurs tokens, selon les règles d'annotation du corpus Rhapsodie.
+						</text>
+					</paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<paragraphe_corps>
+						<text>
+						La première partie du script consiste à analyser la structure des données de départ, afin de pouvoir les lire et les récupérer. Une fois le fichier parcouru et les données analysées, la deuxième étape consiste à créer un fichier de sortie pour les stocker respectant une grammaire XML donnée. Nous avons décidé, afin de conserver un format homogène, d'utiliser une grammaire unifiée pour les deux fichiers XML en sortie au format DTD. Les scripts créés ne nécessitent pas d'installation de bibliothèques particulières et peuvent être utilisés directement sur les corpus bruts.
 						</text>
 					</paragraphe_corps>
 				</elem>
 				
 				<elem>
 					<titre_corps>Lien vers les scripts</titre_corps>
-				</elem>
-				
-				<elem>
 					<paragraphe_corps>
-						<lien url="./liens/script.py">
-						Lien vers les scripts
-						</lien>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps><answer> Le saviez-vous ?</answer></paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<text>
-						Ce texte va être chan-mé !
-						</text>
+						<button url="../script/Sequoia2XML.py">
+						Script Sequoia > XML
+						</button>
+						<button url="../script/Rhapsodie2XML.py">
+						Script Rhapsodie > XML
+						</button>
 					</paragraphe_corps>
 				</elem>
 				
@@ -291,61 +297,14 @@
 		<id>tab</id>
 			<exercice_intro>
 				<titre_paragraphe> Tableau</titre_paragraphe>
-				<paragraphe>Ici, nous parlerons du tableau.</paragraphe>
+				<paragraphe>Après avoir balisé et converti les données des fichiers, nous avons effectué plusieurs requêtes sur les fichiers XML produits, afin de comparer le résultat des deux corpus. Nous résumons les résultats analyses sous formes de tables et autres visualisations au sein d'un même tableau. Nous avons notamment cherché à mettre à jour les principales différences entre les deux corpus, telles que les catégories grammaticales majoritaires, ou encore certaines caractéristiques spécifiques, telles que la surabondance de clitiques ou de déictiques, ou encore la richesse du vocabulaire.</paragraphe>
 			</exercice_intro>
-			<exercice_corps>
+			<exercice_corps>			
 				<elem>
 					<paragraphe_corps>
-						<text>
-						Quel joli tableau, pourrai-je avoir le lien ?
-						</text>
-					</paragraphe_corps>
-				</elem>
-			
-				<elem>
-					<paragraphe_corps>
-						<lien url="./liens/tableau.html">
-						Oui
-						</lien>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<text>
-						Toujorus du script, encore du script !
-						</text>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps><answer> Point important</answer></paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<text>
-						Ceci est un placeholder
-						</text>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<liste>
-						<elem_liste><lien-content url="./liens/exo_12/3208_12.xml">Un lien dans une liste</lien-content></elem_liste>
-						<elem_liste><lien-content url="./liens/exo_12/3208_12_3.xml">Un lien dans une liste</lien-content></elem_liste>
-						<elem_liste><lien-content url="./liens/exo_12/NOM-PREP-NOM.xml">Un lien dans une liste</lien-content></elem_liste>
-						</liste>
-					</paragraphe_corps>
-				</elem>
-				
-				<elem>
-					<paragraphe_corps>
-						<liste>
-						<elem_liste><text-content>Du code dans une liste</text-content><code-content>Trop fort</code-content></elem_liste>
-						<elem_liste><text-content>Encore du code</text-content><code-content>Wahou wahou</code-content></elem_liste>
-						</liste>
+						<button url="./liens/tableau.html">
+						Tableau
+						</button>
 					</paragraphe_corps>
 				</elem>
 				
@@ -365,26 +324,37 @@
 	<exercice id="concl">
 		<id>concl</id>
 			<exercice_intro>
-				<titre_paragraphe> Conclusion</titre_paragraphe>
-				<paragraphe>Il était temps</paragraphe>
+				<titre_paragraphe> Résultats d'analyse</titre_paragraphe>
+				<paragraphe>Nous présentons ci-après plusieurs résultats de nos analyses après conversion et affichage des données au format XML. La problématique que nous avions soulevée était celle des difféérences entre deux corpus, l'un issu d'enregistrements oraux, l'autre d'une compilation de textes écrits. Nous avons tenté lors de la phase de consitution des fichiers structurés et de requêtes, d'orienter nos traitements afin de faire ressortir principalement certaines annotations comme les parties du discours, ou encore certains aspects comme la hiérachisaiton sous forme d'arbres, afin de bénéficier de points de comparaison.</paragraphe>
 			</exercice_intro>
-			<exercice_corps>
+			<exercice_corps>				
 				<elem>
+					<paragraphe_corps><answer> Plusieurs différences...</answer></paragraphe_corps>
+				</elem>
+				
+				<elem>
+					<titre_corps>Spontanéité et présence du locuteur/de contexte</titre_corps>
 					<paragraphe_corps>
 						<text>
-						Nous conclurons plus tard
+						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente davantage d'interjections, de déictiques (ellipses) et de références à l'interlocuteur (tu, vous).
 						</text>
 					</paragraphe_corps>
 				</elem>
 				
 				<elem>
-					<paragraphe_corps><answer> Lumière sur...</answer></paragraphe_corps>
+					<titre_corps>Complexité de la langue</titre_corps>
+					<paragraphe_corps>
+						<text>
+						On constate grâce aux données révélées par les fichiers XML que le corpus oral présente des phrases plus courtes et un vocabulaire moins vaste. De même, le corpus écrit contient plus d'hapax. On remarque également que le corpus écrit présente des structures de phrases plus complexes et plus longues en moyenne.
+						</text>
+					</paragraphe_corps>
 				</elem>
 				
 				<elem>
+					<titre_corps>Particularités grammaticales</titre_corps>
 					<paragraphe_corps>
 						<text>
-						La transformation XSLT
+						Enfin, on constate après transformation des fichiers XML à l'aide de requêtes Xquery que le corpus oral omet certaines formes comme la double négation et présente des formes inédites comme l'apocope (ex : j'veux).
 						</text>
 					</paragraphe_corps>
 				</elem>
